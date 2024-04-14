@@ -1,4 +1,136 @@
 *{
-    padding: 0;
-    margin :0;
+    padding: 0px;
+    margin: 0px;;
 }
+
+#navcontainer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #ff4550;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+}
+
+#banner {
+    margin-top: 12vh;
+    margin-bottom: 3vh;
+}
+#banner img {
+    width: 100vw;
+    height: 88vh;
+}
+
+/* #container-s2{
+    
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 400px 400px;
+    row-gap: 5%;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: auto;
+    
+}
+
+
+.imagen-actividades{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-imagenes{
+
+}
+
+#item1 {
+
+ background-size: cover;
+ width: 100%;
+ height: 400px;
+ 
+
+}
+
+.texto-imagenes{
+    justify-content: center;
+} */
+
+/* .--------- */
+
+#container-s2 {
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 400px 400px;
+    row-gap: 5%;
+    column-gap: 5%;
+    justify-content: center; /* Centra horizontalmente el contenido del grid */
+    align-items: center; /* Centra verticalmente el contenido del grid */
+  }
+  
+  .imagen-actividades {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente la imagen*/
+    align-items: center; /* Centra verticalmente la imagen */
+  position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
+}
+
+.texto-imagenes {
+  position: absolute;
+  top: 50%; /* Coloca el centro vertical del texto en el centro del contenedor padre */
+  left: 50%; /* Coloca el centro horizontal del texto en el centro del contenedor padre */
+  transform: translate(-50%, -50%); /* Centra completamente el texto */
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black; /* Color del texto */
+  font-weight: bold; /* Estilo del texto */
+  font-size: 20px; /* Tamaño del texto */
+}
+
+/*  */
+
+#item2 {
+background-image: url(../img/actividades/funcional/funcional1.jpg);
+background-size: cover;
+width: 100%;
+height: 400px;
+   }
+
+#item3 {
+background-image: url(../img/actividades/pilates/pilates1.jpg);
+background-size: cover;
+width: 100%;
+height: 400px;
+   }
+
+ #item4 {
+background-image: url(../img/actividades/spining/spining1.webp);
+background-size: cover;
+width: 100%;
+height: 400px;
+   }
+
+#item5 {
+background-image: url(../img/actividades/yoga/yoga1.jpg);
+background-size: cover;
+width: 100%;
+height: 400px;
+   }
+
+ #item6 {
+background-image: url(../img/actividades/zumba/zumba1.webp);
+background-size: cover;
+width: 100%;
+height: 400px;
+   }
+
+@media screen {
+    
+}
+
+
