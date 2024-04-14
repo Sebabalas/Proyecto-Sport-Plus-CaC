@@ -3,14 +3,38 @@
     margin: 0px;;
 }
 
-#navcontainer {
+
+
+header {
+    display: flex;
+    z-index: 1000;
     width: 100vw;
     height: 10vh;
     background-color: #ff4550;
     position: fixed;
     top: 0px;
     left: 0px;
-
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3vw;
+    
+}
+.menu-navegacion{
+  padding-right: 7vw;
+}
+.menu-navegacion a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px black;
+  margin: 0 10px;
+  font-size: 2em;
+}
+.menu-navegacion a:hover {
+  color: #FBB90D;
+}
+#logo{
+  height: 80px;
+  width: 120px;
 }
 
 #banner {
@@ -56,12 +80,9 @@
   background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para mejor legibilidad */
   padding: 10px; /* Añade espacio alrededor del texto */
   font-weight: bold; /* Hace que el texto sea más visible */
+  text-align: center;
 }
 
-
-.texto-imagenes{
-    text-align: center;
-} 
 
 /* .--------- */
 
