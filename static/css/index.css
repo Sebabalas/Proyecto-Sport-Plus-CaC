@@ -1,0 +1,205 @@
+*{
+    padding: 0px;
+    margin: 0px;;
+}
+
+:root {
+  --main-color1: #3C60DF;
+  --main-color2: #FF4550;
+  --main-color3: #CC89FF;
+  --main-color4: #FBB90D;
+  --main-color5: #E67555;
+  --main-color6: #CFCB88;
+  --body-fonts-1: "Oswald",  sans-serif;
+  --body-fonts-2: "Cooper-Hewitt",  sans-serif;
+}
+
+header {
+    display: flex;
+    z-index: 1000;
+    width: 100vw;
+    height: 10vh;
+    background-color: #ff4551;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3vw;   
+}
+.menu-navegacion{
+  padding-right: 7vw;
+}
+
+.menu-navegacion a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  margin: 0 20px;
+  font-size: 1.25em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+}
+
+.menu-navegacion a:hover {
+  color: var(--main-color4);
+}
+
+#logo{
+  height: 80px;
+  width: 120px;
+}
+
+#banner {
+    width: 93vw;
+    height: 88vh;
+    background-image: url(../img/bannerimg.webp);
+    background-size: cover;
+    margin-top: 12vh;
+    margin-bottom: 3vh;
+    position: relative;
+    left: 3vw;
+}
+
+#naming {
+  /* font-family: "Oswald";
+  font-weight: 700;
+  font-size: 7em;
+  text-shadow: 1px 1px 1px black;
+  color: var(--main-color4); */
+  width: 500px;
+  position: absolute;
+  top: 250px;
+  left: 50px;
+}
+
+#naming img {
+  width: 500px;
+}
+
+
+#bajada {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px black;
+  color: var(--main-color4);
+  width: 400%;
+  position: absolute;
+  top: 475px;
+  left: 65px;
+}
+
+#container-s2{
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 400px 400px;
+    row-gap: 3%;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;  
+}
+
+.imagenes {
+  position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
+  width: 100%;
+  height: 400px;
+}
+
+.texto-imagenes {
+  position: absolute; /* Establece la posición absoluta */
+  top: 50%; /* Posiciona el texto en la mitad superior de la imagen */
+  left: 50%; /* Posiciona el texto en la mitad izquierda de la imagen */
+  transform: translate(-50%, -50%); /* Centra el texto correctamente */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mejor legibilidad */
+  padding: 10px; /* Añade espacio alrededor del texto */
+  font-weight: bold; /* Hace que el texto sea más visible */
+  text-align: center;
+}
+
+.imagenes p {
+  font-family: "Oswald";
+  font-weight: 400;
+}
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+#item1 {
+  background-image: url(../img/actividades/boxeo/boxeo1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+     }
+
+#item2 {
+  background-image: url(../img/actividades/funcional/funcional1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+     }
+  
+  #item3 {
+  background-image: url(../img/actividades/pilates/pilates1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+     }
+  
+   #item4 {
+  background-image: url(../img/actividades/spining/spining1.webp);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+     }
+  
+  #item5 {
+  background-image: url(../img/actividades/yoga/yoga1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+     }
+  
+   #item6 {
+  background-image: url(../img/actividades/zumba/zumba1.webp);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+     }
+
+
+#consultas {
+      width: 93vw;
+      height: 50vh;
+      background-color:  var(--main-color6);
+      margin-top: 6vh;
+      margin-bottom: 3vh;
+      position: relative;
+      left: 3vw;
+  }
+
+footer {
+  width: 93vw;
+  height: 10vh;
+  background-color:  var(--main-color5);
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  position: relative;
+  left: 3vw;
+}
+
+
+/* @font-face {
+  font-family: "cooper-hewitt-thin";
+  src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Thin.otf);
+}
+
+@font-face {
+  font-family: "cooper-hewitt-medium";
+  src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Medium.otf);
+} */
+
