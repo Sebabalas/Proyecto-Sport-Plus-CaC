@@ -115,11 +115,9 @@ header {
   padding: 10px; /* Añade espacio alrededor del texto */
   font-weight: bold; /* Hace que el texto sea más visible */
   text-align: center;
-}
-
-.imagenes p {
+  font-size: 2em;
   font-family: "Oswald";
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .oswald{
