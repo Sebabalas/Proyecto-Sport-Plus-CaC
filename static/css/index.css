@@ -13,7 +13,9 @@
   --body-fonts-1: "Oswald",  sans-serif;
   --body-fonts-2: "Cooper-Hewitt",  sans-serif;
 }
-
+body{
+  background-color:var(--main-color6)
+}
 header {
     display: flex;
     z-index: 1000;
@@ -231,7 +233,7 @@ header {
 #consultas {
       width: 93vw;
       height: 50vh;
-      background-color:  var(--main-color6);
+      background-color:  var(--main-color1);
       margin-top: 6vh;
       margin-bottom: 3vh;
       position: relative;
