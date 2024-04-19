@@ -142,12 +142,12 @@ header {
   animation-duration: 10s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
-  animation-timing-function:ease-in-out;
+  animation-timing-function:linear;
 }     
 
 @keyframes transicion-Boxeo {
       0%{background-image: url('../img/actividades/boxeo/boxeo1.jpg');}
-      25%{background-image: url('../img/actividades/boxeo/boxeo2.jpg');}
+      25%{background-image: url('../img/actividades/boxeo/boxeo7.jpg');}
       50%{background-image: url('../img/actividades/boxeo/boxeo3.jpg');}
       75%{background-image: url('../img/actividades/boxeo/boxeo4.jpg');}
       100%{background-image: url('../img/actividades/boxeo/boxeo5.jpg');}
@@ -160,16 +160,32 @@ header {
   width: 100%;
   height: 400px;
      }
+#item2:hover{
+      background-repeat: no-repeat;
+      background-position: center;
+      animation-name: transicion-Funcional;
+      animation-duration: 10s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function:linear;
+    }     
+@keyframes transicion-Funcional {
+          0%{background-image: url('../img/actividades/funcional/funcional1.jpg');}
+          25%{background-image: url('../img/actividades/funcional/funcional2.jpeg');}
+          50%{background-image: url('../img/actividades/funcional/funcional5.jpg');}
+          75%{background-image: url('../img/actividades/funcional/funcional5.webp');}
+          100%{background-image: url('../img/actividades/funcional/funcional8.webp');}
+      }
   
   #item3 {
   background-image: url(../img/actividades/pilates/pilates1.jpg);
   background-size: cover;
-  background-position: center;
+  background-position:initial;
   width: 100%;
   height: 400px;
      }
-  
-   #item4 {
+
+  #item4 {
   background-image: url(../img/actividades/spining/spining1.webp);
   background-size: cover;
   background-position: center;
@@ -184,6 +200,24 @@ header {
   width: 100%;
   height: 400px;
      }
+
+#item5:hover{
+      background-repeat: no-repeat;
+      background-position: center;
+      animation-name: transicion-Yoga;
+      animation-duration: 10s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function:linear;
+    }     
+
+@keyframes transicion-Yoga {
+          0%{background-image: url('../img/actividades/yoga/yoga1.jpg');}
+          25%{background-image: url('../img/actividades/yoga/yoga2.avif');}
+          50%{background-image: url('../img/actividades/yoga/yoga3.avif');}
+          75%{background-image: url('../img/actividades/yoga/yoga5.avif');}
+          100%{background-image: url('../img/actividades/yoga/yoga5.jpg');}
+}     
   
    #item6 {
   background-image: url(../img/actividades/zumba/zumba1.webp);
