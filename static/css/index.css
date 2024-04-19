@@ -171,7 +171,7 @@ header {
     }     
 @keyframes transicion-Funcional {
           0%{background-image: url('../img/actividades/funcional/funcional1.jpg');}
-          25%{background-image: url('../img/actividades/funcional/funcional2.jpeg');}
+          25%{background-image: url('../img/actividades/funcional/funcional2.jpg');}
           50%{background-image: url('../img/actividades/funcional/funcional5.jpg');}
           75%{background-image: url('../img/actividades/funcional/funcional5.webp');}
           100%{background-image: url('../img/actividades/funcional/funcional8.webp');}
