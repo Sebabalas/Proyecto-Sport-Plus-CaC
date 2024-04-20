@@ -1,7 +1,13 @@
+/* --------------------------------------------------------------------------------
+GENERAL
+-------------------------------------------------------------------------------- */
+
 *{
     padding: 0px;
     margin: 0px;;
 }
+
+
 
 :root {
   --main-color1: #3C60DF;
@@ -13,9 +19,22 @@
   --body-fonts-1: "Oswald",  sans-serif;
   --body-fonts-2: "Cooper-Hewitt",  sans-serif;
 }
+
+/* --main-color1: rgba(60, 96, 223, 1);
+--main-color2: rgba(255, 69, 80, 1);
+--main-color3: rgba(204, 137, 255, 1);
+--main-color4: rgba(251, 185, 13, 1);
+--main-color5: rgba(230, 117, 85, 1);
+--main-color6: rgba(207, 203, 136, 1); */
+
 body{
-  background-color:var(--main-color6)
+  background-color: white;
 }
+
+/* --------------------------------------------------------------------------------
+HEADER
+-------------------------------------------------------------------------------- */
+
 header {
     display: flex;
     z-index: 1000;
@@ -52,6 +71,14 @@ header {
   width: 120px;
 }
 
+/* --------------------------------------------------------------------------------
+BODY
+-------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------
+SECTION 1 - BANNER
+-------------------------------------------------------------------------------- */
+
 #banner {
     width: 93vw;
     height: 88vh;
@@ -62,6 +89,8 @@ header {
     position: relative;
     left: 3vw;
     overflow: hidden;
+    box-shadow: 2px -1px 5px rgb(56, 56, 56);
+
 }
 
 #naming {
@@ -93,6 +122,11 @@ header {
   left: 65px;
 }
 
+
+/* --------------------------------------------------------------------------------
+SECTION 2 - SERVICIOS
+-------------------------------------------------------------------------------- */
+
 #container-s2{
     display: grid;
     grid-template-columns: 28% 28% 28%;
@@ -102,6 +136,15 @@ header {
     justify-content: center;
     align-items: center;  
 }
+
+#container-s2 a{
+  color: black;
+}
+
+#container-s2 a:hover{
+  color: var(--main-color2);
+}
+
 
 .imagenes {
   position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
@@ -114,21 +157,17 @@ header {
   top: 50%; /* Posiciona el texto en la mitad superior de la imagen */
   left: 50%; /* Posiciona el texto en la mitad izquierda de la imagen */
   transform: translate(-50%, -50%); /* Centra el texto correctamente */
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mejor legibilidad */
+  background-color: rgb(255, 255, 255, .7);
+  border-radius: 4%;
   padding: 10px; /* Añade espacio alrededor del texto */
   font-weight: bold; /* Hace que el texto sea más visible */
   text-align: center;
-  font-size: 2em;
-  font-family: "Oswald";
-  font-weight: 900;
+  font-size: 1.5em;
+  font-family: var(--body-fonts-1);
+  font-weight: 300;
 }
 
-.oswald{
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
+/* ----------------------- ITEMS ----------------------- */ 
 
 #item1 {
   background-image: url(../img/actividades/boxeo/boxeo1.jpg);
@@ -136,19 +175,20 @@ header {
   background-position: center;
   width: 100%;
   height: 400px;
-     }
+  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+}
 
 #item1:hover{
   background-repeat: no-repeat;
   background-position: center;
-  animation-name: transicion-Boxeo;
-  animation-duration: 20s;
-  animation-delay: 2s;
+  animation-name: transicion-boxeo;
+  animation-duration: 15s;
+  animation-delay: 0.25s;
   animation-iteration-count: infinite;
   animation-timing-function:linear;
 }     
 
-@keyframes transicion-Boxeo {
+@keyframes transicion-boxeo {
       0%{background-image: url('../img/actividades/boxeo/boxeo1.jpg');}
       20%{background-image: url('../img/actividades/boxeo/boxeo2.jpg');}
       40%{background-image: url('../img/actividades/boxeo/boxeo3.jpg');}
@@ -157,28 +197,30 @@ header {
   }
 
 #item2 {
-  background-image: url(../img/actividades/funcional/funcional1.jpg);
+  background-image: url(../img/actividades/funcional/funcional1.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 400px;
+  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+
      }
      
 #item2:hover{
       background-repeat: no-repeat;
       background-position: center;
-      animation-name: transicion-Funcional;
-      animation-duration: 20s;
-      animation-delay: 2s;
+      animation-name: transicion-funcional;
+      animation-duration: 15s;
+      animation-delay: 0.25s;
       animation-iteration-count: infinite;
       animation-timing-function:linear;
     }     
-@keyframes transicion-Funcional {
-          0%{background-image: url('../img/actividades/funcional/funcional1.jpg');}
-          20%{background-image: url('../img/actividades/funcional/funcional2.jpg');}
-          40%{background-image: url('../img/actividades/funcional/funcional5.jpg');}
-          60%{background-image: url('../img/actividades/funcional/funcional5.webp');}
-          80%{background-image: url('../img/actividades/funcional/funcional8.webp');}
+@keyframes transicion-funcional {
+          0%{background-image: url('../img/actividades/funcional/funcional1.png');}
+          20%{background-image: url('../img/actividades/funcional/funcional2.png');}
+          40%{background-image: url('../img/actividades/funcional/funcional3.png');}
+          60%{background-image: url('../img/actividades/funcional/funcional4.png');}
+          80%{background-image: url('../img/actividades/funcional/funcional5.png');}
       }
   
   #item3 {
@@ -187,15 +229,54 @@ header {
   background-position:initial;
   width: 100%;
   height: 400px;
+  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+
      }
 
+     #item3:hover{
+      background-repeat: no-repeat;
+      background-position: center;
+      animation-name: transicion-pilates;
+      animation-duration: 15s;
+      animation-delay: 0.25s;
+      animation-iteration-count: infinite;
+      animation-timing-function:linear;
+    }     
+@keyframes transicion-pilates {
+          0%{background-image: url('../img/actividades/pilates/pilates1.jpg');}
+          20%{background-image: url('../img/actividades/pilates/pilates2.jpg');}
+          40%{background-image: url('../img/actividades/pilates/pilates3.jpg');}
+          60%{background-image: url('../img/actividades/pilates/pilates4.jpg');}
+          80%{background-image: url('../img/actividades/pilates/pilates5.jpg');}
+      }
+
+
   #item4 {
-  background-image: url(../img/actividades/spining/spining1.webp);
+  background-image: url(../img/actividades/spining/spining1.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 400px;
+  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+
      }
+
+     #item4:hover{
+      background-repeat: no-repeat;
+      background-position: center;
+      animation-name: transicion-spining;
+      animation-duration: 15s;
+      animation-delay: 0.25s;
+      animation-iteration-count: infinite;
+      animation-timing-function:linear;
+    }     
+@keyframes transicion-spining {
+          0%{background-image: url('../img/actividades/spining/spining1.jpg');}
+          20%{background-image: url('../img/actividades/spining/spining2.jpg');}
+          40%{background-image: url('../img/actividades/spining/spining3.jpg');}
+          60%{background-image: url('../img/actividades/spining/spining4.jpg');}
+          80%{background-image: url('../img/actividades/spining/spining5.jpg');}
+      }
   
   #item5 {
   background-image: url(../img/actividades/yoga/yoga1.jpg);
@@ -203,38 +284,66 @@ header {
   background-position: center;
   width: 100%;
   height: 400px;
+  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+
      }
 
 #item5:hover{
       background-repeat: no-repeat;
       background-position: center;
-      animation-name: transicion-Yoga;
-      animation-duration: 20s;
-      animation-delay: 2s;
+      animation-name: transicion-yoga;
+      animation-duration: 15s;
+      animation-delay: 0.25s;
       animation-iteration-count: infinite;
       animation-timing-function:linear;
     }     
 
-@keyframes transicion-Yoga {
+@keyframes transicion-yoga {
           0%{background-image: url('../img/actividades/yoga/yoga1.jpg');}
-          20%{background-image: url('../img/actividades/yoga/yoga2.avif');}
-          40%{background-image: url('../img/actividades/yoga/yoga3.avif');}
-          60%{background-image: url('../img/actividades/yoga/yoga5.avif');}
+          20%{background-image: url('../img/actividades/yoga/yoga2.jpg');}
+          40%{background-image: url('../img/actividades/yoga/yoga3.jpg');}
+          60%{background-image: url('../img/actividades/yoga/yoga4.jpg');}
           80%{background-image: url('../img/actividades/yoga/yoga5.jpg');}
 }     
   
    #item6 {
-  background-image: url(../img/actividades/zumba/zumba1.webp);
+  background-image: url(../img/actividades/zumba/zumba1.jpg);
   background-size: cover;
   background-position: center;
   width: auto;
   height: 400px;
+  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+
      }
 
+     #item6:hover{
+      background-repeat: no-repeat;
+      background-position: center;
+      animation-name: transicion-zumba;
+      animation-duration: 15s;
+      animation-delay: 0.25s;
+      animation-iteration-count: infinite;
+      animation-timing-function:linear;
+    }     
+
+@keyframes transicion-zumba {
+          0%{background-image: url('../img/actividades/zumba/zumba1.jpg');}
+          20%{background-image: url('../img/actividades/zumba/zumba2.jpg');}
+          40%{background-image: url('../img/actividades/zumba/zumba3.jpg');}
+          60%{background-image: url('../img/actividades/zumba/zumba4.jpg');}
+          80%{background-image: url('../img/actividades/zumba/zumba5.jpg');}
+}     
+
+/* ----------------------- ITEMS ----------------------- */ 
+
+/* --------------------------------------------------------------------------------
+SECTION 3 - CONSULTAS 
+-------------------------------------------------------------------------------- */
 
 #consultas {
       width: 93vw;
-      height: 50vh;
+      height: auto;
+      padding-bottom: 20px;
       background-color:  var(--main-color1);
       margin-top: 6vh;
       margin-bottom: 3vh;
@@ -242,46 +351,73 @@ header {
       left: 3vw;
   }
 
-#consultas p{
-  font-family: Cooper-Hewitt, sans-serif;
+#consultas-titulo{
+    width: 100%;
+    padding-top: 20px;
+  } 
+
+#consultas-titulo h3{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: var(--body-fonts-1);
+    font-weight: 400;
+  }
+
+#consultas-formulario{
+    display:grid;
+    grid-template-columns: 35% 65%;
+    align-content: left;
+    margin-top: 30px;
+    margin-bottom: 3vh;
+    column-gap: 5%;   
+}
+
+#consultas-formulario-left > p{
+  font-family: var(--body-fonts-2);
   font-size: 1.5em;
   font-weight: 100;
-  margin-left: 5vw;
-  border: 3px solid black
-  
-}
-#titulo-formulario{
-  text-align: center;
-  font-size: 32px
-}
-
-#Texto-y-Formulario{
-      display:grid;
-      grid-template-columns: 35% 65%;
-      align-content: center;
-      height: 100%;
-      width: auto;
-      margin-bottom: 3vh;
-      column-gap: 20%;
-      
-    
-
-}
-#formulario{
-  margin-left: 20px;
-  
-}
-#formulario nombre{
-  
-}
-#formulario input,textarea{
-  width: 80%;
+  margin-left: 10%;
   
 }
 
-/*#texto-consulta{
-  border: 3px solid black
-}*/
+#consultas-formulario-right{
+  font-family: var(--body-fonts-2);
+  font-weight: 100;
+  
+}
+
+#campo-mail, #campo-consulta, #campo-enviar {
+  margin-top: 10px;
+  
+}
+
+#campo-nombre input {
+  border: 1px solid red;
+  height: 30px;
+  width: 350px;
+  margin-top: 10px;
+}
+
+#campo-mail input {
+  border: 1px solid red;
+  height: 30px;
+  width: 350px;
+  margin-top: 10px;
+
+}
+
+#campo-consulta textarea {
+  border: 1px solid red;
+  height: 100px;
+  width: 350px;
+  margin-top: 10px;
+
+}
+
+
+--------------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------------- */
 
 footer {
   width: 93vw;
@@ -294,9 +430,21 @@ footer {
 }
 footer input{
   width: 30%;
-  font-family: var(--body-fonts-2);
+  font-family: var(--body-fonts-1);
+  font-weight: 300;
+
 }
 
+/* --------------------------------------------------------------------------------
+FUENTES
+-------------------------------------------------------------------------------- */
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
 
 /* @font-face {
   font-family: "cooper-hewitt-thin";
