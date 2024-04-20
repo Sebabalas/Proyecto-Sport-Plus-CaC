@@ -61,6 +61,7 @@ header {
     margin-bottom: 3vh;
     position: relative;
     left: 3vw;
+    overflow: hidden;
 }
 
 #naming {
