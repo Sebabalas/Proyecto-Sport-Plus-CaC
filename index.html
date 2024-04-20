@@ -86,27 +86,29 @@
     </div>
     <div id="Texto-y-Formulario">
         <div id="texto-consulta">
-         <p>
+            <p>
             ¡Hacenos cualquier consulta que tengas!
-         </p>
+            </p>
         </div>
         <div id="formulario">
-            <form action="">
+            <form name="miformulario" action="url" method="post">
                 <div>
-                  <label for="nombre">Nombre: 
-                  </label>
-                  <input type="text" name="nombre" id="nombre">  
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre">  
                 </div>
                 <div>
-                    <label for="mail">Correo electrónico:
-                    </label>
+                    <label for="mail">Correo electrónico: </label>
                     <input type="email" name="mail" id="mail">
-                    <div><label for="consulta">Consulta</label></div>
-                    <textarea name="consulta" id="" cols="30" rows="10"> </textarea>
                 </div>
+                <div>
+                    <label for="consulta">Consulta</label>
+                    <textarea name="consulta" id="" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Enviar ahora">
             </form>
         </div>
     </div>
+    
 </section>
 </main>
 
