@@ -261,8 +261,22 @@ header {
       height: 100%;
       width: auto;
       margin-bottom: 3vh;
+      
+    
 
 }
+#formulario{
+  margin-left: 20px;
+  
+}
+#formulario nombre{
+  
+}
+#formulario input,textarea{
+  width: 80%;
+  
+}
+
 /*#texto-consulta{
   border: 3px solid black
 }*/
@@ -275,6 +289,10 @@ footer {
   margin-bottom: 3vh;
   position: relative;
   left: 3vw;
+}
+footer input{
+  width: 30%;
+  font-family: var(--body-fonts-2);
 }
 
 
