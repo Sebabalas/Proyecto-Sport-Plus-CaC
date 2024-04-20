@@ -240,6 +240,32 @@ header {
       left: 3vw;
   }
 
+#consultas p{
+  font-family: Cooper-Hewitt, sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-left: 5vw;
+  border: 3px solid black
+  
+}
+#titulo-formulario{
+  text-align: center;
+  font-size: 32px
+}
+
+#Texto-y-Formulario{
+      display:grid;
+      grid-template-columns: 35% 65%;
+      align-content: center;
+      height: 100%;
+      width: auto;
+      margin-bottom: 3vh;
+
+}
+/*#texto-consulta{
+  border: 3px solid black
+}*/
+
 footer {
   width: 93vw;
   height: 10vh;
