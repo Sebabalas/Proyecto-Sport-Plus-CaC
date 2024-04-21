@@ -96,49 +96,35 @@
 
 </section>
 
-<section id="consultas">
+<section class="consultas">
 
-    <div id="consultas-titulo">
+    <div class="consultas-titulo">
         <h3>CONTACTANOS</h3>
     </div>
 
-    <div id="consultas-formulario">
+    <div class="consultas-formulario">
         
-        <div id="consultas-formulario-left">
+        <div class="consultas-formulario-left">
             <p>
             Escribinos para consultarnos
             </p>
         </div>
 
-        <div id="consultas-formulario-right">
+        <div class="consultas-formulario-right">
            
             <form name="miformulario" action="url" method="post">
-               
-                <div id="campo-nombre">
-                    <div>
-                    <label for="nombre">Nombre </label>
-                    </div>
+            <div class="formulario">
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre" id="name" placeholder="Nombre">
                     
-                    <input type="text" name="nombre" id="nombre">  
-                </div>
-                
-                <div id="campo-mail">
-                    <div>
-                    <label for="mail">Email </label>
-                    </div>
-                    <input type="email" name="mail" id="mail">
-                </div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
                
-                <div id="campo-consulta">
-                    <div>
-                    <label for="consulta">Consulta </label>
-                    </div>
-                    <textarea name="consulta" id="" cols="30" rows="10"></textarea>
-                </div>
-
-               <div id="campo-enviar">
-                <input type="submit" value="Enviar">
-                </div>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="Mensaje" cols="20" rows="5" placeholder="Mensaje"></textarea>
+                
+                <input class="campo-enviar" type="submit" value="Enviar">
+            </div>
 
             </form>
       

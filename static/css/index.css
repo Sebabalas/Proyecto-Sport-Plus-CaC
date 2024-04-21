@@ -340,7 +340,7 @@ SECTION 2 - SERVICIOS
 SECTION 3 - CONSULTAS 
 -------------------------------------------------------------------------------- */
 
-#consultas {
+.consultas {
       width: 93vw;
       height: auto;
       padding-bottom: 20px;
@@ -351,69 +351,85 @@ SECTION 3 - CONSULTAS
       left: 3vw;
   }
 
-#consultas-titulo{
+.consultas-titulo{
     width: 100%;
     padding-top: 20px;
   } 
 
-#consultas-titulo h3{
+.consultas-titulo h3{
     text-align: center;
     font-size: 1.5em;
     font-family: var(--body-fonts-1);
     font-weight: 400;
   }
 
-#consultas-formulario{
-    display:grid;
-    grid-template-columns: 35% 65%;
-    align-content: left;
+.consultas-formulario{
+    display:flex;
+    /* grid-template-columns: 35% 55%; */
+    justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 3vh;
-    column-gap: 5%;   
+    column-gap: 5%;
 }
 
-#consultas-formulario-left > p{
+.consultas-formulario-left  p{
   font-family: var(--body-fonts-2);
   font-size: 1.5em;
   font-weight: 100;
   margin-left: 10%;
   
 }
+.consultas-formulario-left{
+  display: flex;
+  align-items: center;
+}
 
-#consultas-formulario-right{
+.consultas-formulario-right{
   font-family: var(--body-fonts-2);
   font-weight: 100;
+  background-color: rgb(209, 89, 99);
+  padding: 20px 20px;
+  box-shadow: 0 0 20px rgb(0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+ 
   
 }
-
-#campo-mail, #campo-consulta, #campo-enviar {
-  margin-top: 10px;
-  
-}
-
-#campo-nombre input {
-  border: 1px solid red;
-  height: 30px;
-  width: 350px;
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
   margin-top: 10px;
 }
-
-#campo-mail input {
-  border: 1px solid red;
-  height: 30px;
-  width: 350px;
-  margin-top: 10px;
-
+.formulario{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: auto;
 }
 
-#campo-consulta textarea {
-  border: 1px solid red;
-  height: 100px;
-  width: 350px;
-  margin-top: 10px;
-
+input, textarea{
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #edfff0;
+  border: 2px solid white;
+  outline: none;
 }
-
+.campo-enviar{
+  color: white;
+    font-size: 14px;
+    border: 0;
+    border-radius: 25px;
+    background-color: green;
+    box-shadow: 0 0 20px rgb(7, 78, 7);
+    cursor: pointer;
+}
+.campo-enviar:hover{
+  background-color: rgb(38, 180, 38);
+}
 
 --------------------------------------------------------------------------------
 FOOTER
@@ -434,6 +450,7 @@ footer input{
   font-weight: 300;
 
 }
+
 
 /* --------------------------------------------------------------------------------
 FUENTES
