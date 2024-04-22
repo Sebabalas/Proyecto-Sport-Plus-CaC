@@ -47,6 +47,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-left: 3vw;   
+    border-bottom: .5px solid black;
 }
 .menu-navegacion{
   padding-right: 7vw;
@@ -80,8 +81,8 @@ SECTION 1 - BANNER
 -------------------------------------------------------------------------------- */
 
 #banner {
-    width: 93vw;
-    height: 88vh;
+    width: 94%;
+    height: 86vh;
     background-image: url(../img/bannerimg.webp);
     background-size: cover;
     margin-top: 12vh;
