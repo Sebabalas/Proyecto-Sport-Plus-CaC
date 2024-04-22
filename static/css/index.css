@@ -89,7 +89,8 @@ SECTION 1 - BANNER
     position: relative;
     left: 3vw;
     overflow: hidden;
-    box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
 }
 
@@ -186,12 +187,11 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 }
 
 #item1:hover{
-  background-repeat: no-repeat;
-  background-position: center;
   animation-name: transicion-boxeo;
   animation-duration: 15s;
   animation-delay: 0.25s;
@@ -213,13 +213,12 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
      
 #item2:hover{
-      background-repeat: no-repeat;
-      background-position: center;
       animation-name: transicion-funcional;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -240,13 +239,13 @@ SECTION 2 - SERVICIOS
   background-position:initial;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
 
      #item3:hover{
-      background-repeat: no-repeat;
-      background-position: center;
+
       animation-name: transicion-pilates;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -268,13 +267,12 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
 
      #item4:hover{
-      background-repeat: no-repeat;
-      background-position: center;
       animation-name: transicion-spining;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -295,13 +293,12 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
 
 #item5:hover{
-      background-repeat: no-repeat;
-      background-position: center;
       animation-name: transicion-yoga;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -323,13 +320,12 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: auto;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
 
      #item6:hover{
-      background-repeat: no-repeat;
-      background-position: center;
       animation-name: transicion-zumba;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -390,6 +386,7 @@ SECTION 3 - CONSULTAS
 #consultas-right{
   font-family: var(--body-fonts-2);
   font-weight: 100;
+  padding-left: 50px;
 }
 
 #campo-mail, #campo-consulta, #campo-enviar {
