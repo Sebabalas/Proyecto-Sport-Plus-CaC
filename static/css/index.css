@@ -547,4 +547,35 @@ FUENTES
   font-family: "cooper-hewitt-medium";
   src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Medium.otf);
 } */
+@media only screen and (max-width: 600px){
+  .menu-navegacion{
+    margin-left: 1vw;
+  }
+  .menu-navegacion a{
+    font-size: 1em;
+    margin: 0px;
+  }
+  #logo{
+    height: 60px;
+    width: 100px
+  }
+  #banner{
+    width: 94%;
+    height: 70vh;
+  }
+  #naming{
+    width: 90vw;
+    top: 30vh;
+    left: 0px;
+  }
+  #naming img {
+    width: 90vw;
+  }
+   #bajada{
+    width: 90vw;
+    font-size: 1.8em;
+    left: 5vw;
+    top: 60vh;
 
+   } 
+}
