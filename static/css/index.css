@@ -360,6 +360,7 @@ SECTION 3 - CONSULTAS
       margin-left: 3vw;
       padding-top: 25px;
       padding-bottom: 25px;
+      background-color: var(--main-color1);
   }
 
 #consultas-titulo {
@@ -448,6 +449,7 @@ footer {
   margin-bottom: 20px;
   font-family: var(--body-fonts-2);
   border: 1px solid black;
+  background-color: var(--main-color4);
   /* box-shadow: 1px 1px 1px black; */
  
 }
