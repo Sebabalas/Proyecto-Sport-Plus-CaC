@@ -190,6 +190,7 @@ SECTION 2 - SERVICIOS
   height: 400px;
   /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
   border: 1px solid black;
+
 }
 
 #item1:hover{
@@ -197,7 +198,7 @@ SECTION 2 - SERVICIOS
   animation-duration: 15s;
   animation-delay: 0.25s;
   animation-iteration-count: infinite;
-  animation-timing-function:linear;
+  animation-timing-function: linear;
 }     
 
 @keyframes transicion-boxeo {
@@ -205,8 +206,9 @@ SECTION 2 - SERVICIOS
       20%{background-image: url('../img/actividades/boxeo/boxeo2.jpg');}
       40%{background-image: url('../img/actividades/boxeo/boxeo3.jpg');}
       60%{background-image: url('../img/actividades/boxeo/boxeo4.jpg');}
-      80%{background-image: url('../img/actividades/boxeo/boxeo5.jpg');}
+      80%{background-image: url('../img/actividades/boxeo/boxeo5.jpg');}   
   }
+  
 
 #item2 {
   background-image: url(../img/actividades/funcional/funcional1.png);
@@ -246,7 +248,6 @@ SECTION 2 - SERVICIOS
      }
 
      #item3:hover{
-
       animation-name: transicion-pilates;
       animation-duration: 15s;
       animation-delay: 0.25s;
