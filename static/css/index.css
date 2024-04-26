@@ -90,6 +90,9 @@ SECTION 1 - BANNER
     position: relative;
     left: 3vw;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
   /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
   border: 1px solid black;
 
@@ -102,9 +105,11 @@ SECTION 1 - BANNER
   text-shadow: 1px 1px 1px black;
   color: var(--main-color4); */
   width: 500px;
-  position: absolute;
+  position: relative;
+  top: 5vh
+  /*position: absolute;
   top: 250px;
-  left: 50px;
+  left: 50px;*/
 }
 
 #naming img {
@@ -119,9 +124,11 @@ SECTION 1 - BANNER
   text-shadow: 1px 1px 1px black;
   color: var(--main-color4);
   width: 400%;
-  position: absolute;
+  position: relative;
+  left: 25px;
+  /*position: absolute;
   top: 475px;
-  left: 65px;
+  left: 65px;*/
 }
 
 
@@ -132,9 +139,9 @@ SECTION 2 - SERVICIOS
 #container-s2{
     display: grid;
     grid-template-columns: 28% 28% 28%;
-    grid-template-rows: 100 px 500px 500px;
-    row-gap: 3%;
-    column-gap: 5%;
+    grid-template-rows: 450px 450px;
+    row-gap: 3vh;
+    column-gap: 5vw;
     justify-content: center;
     align-items: center;  
 }
@@ -171,8 +178,8 @@ SECTION 2 - SERVICIOS
 /* ----------------------- ITEMS ----------------------- */ 
 
 #item0{
-  grid-column-start: 1;
-  grid-column-end: 4;
+  /*grid-column-start: 1;
+  grid-column-end: 4;*/
   text-align: center;
 }
 
@@ -565,8 +572,8 @@ FUENTES
   }
   #naming{
     width: 90vw;
-    top: 30vh;
-    left: 0px;
+    /*top: 30vh;
+    left: 0px;*/
   }
   #naming img {
     width: 90vw;
@@ -574,8 +581,32 @@ FUENTES
    #bajada{
     width: 90vw;
     font-size: 1.8em;
-    left: 5vw;
-    top: 60vh;
+    /*left: 5vw;
+    top: 60vh;*/
 
    } 
+   #container-s2{
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 300px 300px;
+   }
+   .imagenes { /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
+    width: 100%;
+    height: 200px;
+  }
+  
+  .texto-imagenes {
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%; /* Posiciona el texto en la mitad superior de la imagen */
+    left: 50%; /* Posiciona el texto en la mitad izquierda de la imagen */
+    transform: translate(-50%, -50%); /* Centra el texto correctamente */
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 4%;
+    padding: 10px; /* Añade espacio alrededor del texto */
+    font-weight: bold; /* Hace que el texto sea más visible */
+    text-align: center;
+    font-size: 1.5em;
+    font-family: var(--body-fonts-1);
+    font-weight: 300;
+  }
+  
 }
