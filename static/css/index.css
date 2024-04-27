@@ -47,6 +47,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-left: 3vw;   
+    border-bottom: .5px solid black;
 }
 .menu-navegacion{
   padding-right: 7vw;
@@ -80,8 +81,8 @@ SECTION 1 - BANNER
 -------------------------------------------------------------------------------- */
 
 #banner {
-    width: 93vw;
-    height: 88vh;
+    width: 94%;
+    height: 86vh;
     background-image: url(../img/bannerimg.webp);
     background-size: cover;
     margin-top: 12vh;
@@ -89,7 +90,11 @@ SECTION 1 - BANNER
     position: relative;
     left: 3vw;
     overflow: hidden;
-    box-shadow: 2px -1px 5px rgb(56, 56, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
 }
 
@@ -100,9 +105,11 @@ SECTION 1 - BANNER
   text-shadow: 1px 1px 1px black;
   color: var(--main-color4); */
   width: 500px;
-  position: absolute;
+  position: relative;
+  top: 5vh
+  /*position: absolute;
   top: 250px;
-  left: 50px;
+  left: 50px;*/
 }
 
 #naming img {
@@ -117,9 +124,11 @@ SECTION 1 - BANNER
   text-shadow: 1px 1px 1px black;
   color: var(--main-color4);
   width: 400%;
-  position: absolute;
+  position: relative;
+  left: 25px;
+  /*position: absolute;
   top: 475px;
-  left: 65px;
+  left: 65px;*/
 }
 
 
@@ -130,9 +139,9 @@ SECTION 2 - SERVICIOS
 #container-s2{
     display: grid;
     grid-template-columns: 28% 28% 28%;
-    grid-template-rows: 400px 400px;
-    row-gap: 3%;
-    column-gap: 5%;
+    grid-template-rows: 450px 450px;
+    row-gap: 3vh;
+    column-gap: 5vw;
     justify-content: center;
     align-items: center;  
 }
@@ -144,7 +153,6 @@ SECTION 2 - SERVICIOS
 #container-s2 a:hover{
   color: var(--main-color2);
 }
-
 
 .imagenes {
   position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
@@ -169,23 +177,35 @@ SECTION 2 - SERVICIOS
 
 /* ----------------------- ITEMS ----------------------- */ 
 
+#item0{
+  /*grid-column-start: 1;
+  grid-column-end: 4;*/
+  text-align: center;
+}
+
+#item0 h3 {
+  font-family: var(--body-fonts-1);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
 #item1 {
   background-image: url(../img/actividades/boxeo/boxeo1.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
+
 }
 
 #item1:hover{
-  background-repeat: no-repeat;
-  background-position: center;
   animation-name: transicion-boxeo;
   animation-duration: 15s;
   animation-delay: 0.25s;
   animation-iteration-count: infinite;
-  animation-timing-function:linear;
+  animation-timing-function: linear;
 }     
 
 @keyframes transicion-boxeo {
@@ -193,8 +213,9 @@ SECTION 2 - SERVICIOS
       20%{background-image: url('../img/actividades/boxeo/boxeo2.jpg');}
       40%{background-image: url('../img/actividades/boxeo/boxeo3.jpg');}
       60%{background-image: url('../img/actividades/boxeo/boxeo4.jpg');}
-      80%{background-image: url('../img/actividades/boxeo/boxeo5.jpg');}
+      80%{background-image: url('../img/actividades/boxeo/boxeo5.jpg');}   
   }
+  
 
 #item2 {
   background-image: url(../img/actividades/funcional/funcional1.png);
@@ -202,13 +223,12 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
      
 #item2:hover{
-      background-repeat: no-repeat;
-      background-position: center;
       animation-name: transicion-funcional;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -229,13 +249,12 @@ SECTION 2 - SERVICIOS
   background-position:initial;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
 
      #item3:hover{
-      background-repeat: no-repeat;
-      background-position: center;
       animation-name: transicion-pilates;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -257,13 +276,12 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
 
      #item4:hover{
-      background-repeat: no-repeat;
-      background-position: center;
       animation-name: transicion-spining;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -284,13 +302,12 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
 
 #item5:hover{
-      background-repeat: no-repeat;
-      background-position: center;
       animation-name: transicion-yoga;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -312,13 +329,12 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: auto;
   height: 400px;
-  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
+  border: 1px solid black;
 
      }
 
      #item6:hover{
-      background-repeat: no-repeat;
-      background-position: center;
       animation-name: transicion-zumba;
       animation-duration: 15s;
       animation-delay: 0.25s;
@@ -341,49 +357,46 @@ SECTION 3 - CONSULTAS
 -------------------------------------------------------------------------------- */
 
 #consultas {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      border: 1px solid black;
+      /* box-shadow: 1px 1px 1px black; */
       width: 93vw;
-      height: auto;
-      padding-bottom: 20px;
-      background-color:  var(--main-color1);
-      margin-top: 6vh;
-      margin-bottom: 3vh;
-      position: relative;
-      left: 3vw;
+      margin-top: 75px;
+      margin-left: 3vw;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      background-color: var(--main-color1);
   }
 
-#consultas-titulo{
+#consultas-titulo {
     width: 100%;
     padding-top: 20px;
+    margin-top: 70px;
+    margin-left: 12%;
   } 
 
 #consultas-titulo h3{
-    text-align: center;
-    font-size: 1.5em;
+    text-align: left;
+    font-size: 3rem;
     font-family: var(--body-fonts-1);
     font-weight: 400;
   }
 
-#consultas-formulario{
-    display:grid;
-    grid-template-columns: 35% 65%;
-    align-content: left;
-    margin-top: 30px;
-    margin-bottom: 3vh;
-    column-gap: 5%;   
-}
+  #consultas-left > p {
+    font-family: var(--body-fonts-2);
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-left: 12%;
+    
+  }
 
-#consultas-formulario-left > p{
-  font-family: var(--body-fonts-2);
-  font-size: 1.5em;
-  font-weight: 100;
-  margin-left: 10%;
-  
-}
 
-#consultas-formulario-right{
+#consultas-right{
   font-family: var(--body-fonts-2);
   font-weight: 100;
-  
+  padding-left: 50px;
 }
 
 #campo-mail, #campo-consulta, #campo-enviar {
@@ -394,14 +407,14 @@ SECTION 3 - CONSULTAS
 #campo-nombre input {
   border: 1px solid red;
   height: 30px;
-  width: 350px;
+  width: 70%;
   margin-top: 10px;
 }
 
 #campo-mail input {
   border: 1px solid red;
   height: 30px;
-  width: 350px;
+  width: 70%;
   margin-top: 10px;
 
 }
@@ -409,30 +422,116 @@ SECTION 3 - CONSULTAS
 #campo-consulta textarea {
   border: 1px solid red;
   height: 100px;
-  width: 350px;
+  width: 70%;
   margin-top: 10px;
+}
 
+#campo-enviar input {
+  background-color: #FF4550;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 50px;
+  padding: 3px;
+}
+
+#campo-enviar input[type="submit"] {
+  font-family: var(--body-fonts-2);
+  font-weight: 100;
 }
 
 
---------------------------------------------------------------------------------
+
+/*--------------------------------------------------------------------------------
 FOOTER
 -------------------------------------------------------------------------------- */
 
 footer {
+  display: grid;
   width: 93vw;
-  height: 10vh;
-  background-color:  var(--main-color5);
-  margin-top: 1vh;
-  margin-bottom: 3vh;
-  position: relative;
-  left: 3vw;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1;
+  margin-top: 20px;
+  margin-left: 3vw;
+  margin-bottom: 20px;
+  font-family: var(--body-fonts-2);
+  border: 1px solid black;
+  background-color: var(--main-color4);
+  /* box-shadow: 1px 1px 1px black; */
+ 
 }
-footer input{
-  width: 30%;
+
+#footer-left {
+  padding: 35px 20px 20px 70px;
+}
+
+#footer-left p {
+  font-weight: 100;
+}
+
+#footer-left input{
   font-family: var(--body-fonts-1);
   font-weight: 300;
+  border: 1px solid red;
+  height: 30px;
+  width: 70%;
+  margin-top: 10px;
+}
 
+#footer-left input::placeholder {
+  font-family: var(--body-fonts-2);
+  padding: 5px;
+}
+
+#footer-right {
+  padding: 20px 100px 20px 20px;
+  font-weight: 100;
+  text-align: right;
+
+}
+
+
+#footer-right-info p{
+margin-top: 3px;
+vertical-align: middle;
+display: inline-block;
+margin-bottom: 0; 
+
+}
+
+
+#footer-right-mail::before {
+  margin-right: 3px;
+  content: url(../img/iconos/footer/mail.png);
+  vertical-align: middle; 
+  display: inline-block; 
+}
+
+#footer-right-cel::before {
+  margin-right: 3px;
+  content: url(../img/iconos/footer/tel.png);
+  vertical-align: middle; 
+  display: inline-block; 
+}
+
+#footer-right-ubic::before {
+  margin-right: 3px;
+  content: url(../img/iconos/footer/ubicacion.png);
+  vertical-align: middle; 
+  display: inline-block; 
+}
+
+
+/* --------------------------------------------------------------------------------
+CRÊDITOS
+-------------------------------------------------------------------------------- */
+
+#creditos {
+  font-family: var(--body-fonts-2);
+  font-weight: 100;
+  font-size: .7rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* --------------------------------------------------------------------------------
@@ -455,4 +554,59 @@ FUENTES
   font-family: "cooper-hewitt-medium";
   src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Medium.otf);
 } */
+@media only screen and (max-width: 600px){
+  .menu-navegacion{
+    margin-left: 1vw;
+  }
+  .menu-navegacion a{
+    font-size: 1em;
+    margin: 0px;
+  }
+  #logo{
+    height: 60px;
+    width: 100px
+  }
+  #banner{
+    width: 94%;
+    height: 70vh;
+  }
+  #naming{
+    width: 90vw;
+    /*top: 30vh;
+    left: 0px;*/
+  }
+  #naming img {
+    width: 90vw;
+  }
+   #bajada{
+    width: 90vw;
+    font-size: 1.8em;
+    /*left: 5vw;
+    top: 60vh;*/
 
+   } 
+   #container-s2{
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 300px 300px;
+   }
+   .imagenes { /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
+    width: 100%;
+    height: 200px;
+  }
+  
+  .texto-imagenes {
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%; /* Posiciona el texto en la mitad superior de la imagen */
+    left: 50%; /* Posiciona el texto en la mitad izquierda de la imagen */
+    transform: translate(-50%, -50%); /* Centra el texto correctamente */
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 4%;
+    padding: 10px; /* Añade espacio alrededor del texto */
+    font-weight: bold; /* Hace que el texto sea más visible */
+    text-align: center;
+    font-size: 1.5em;
+    font-family: var(--body-fonts-1);
+    font-weight: 300;
+  }
+  
+}
