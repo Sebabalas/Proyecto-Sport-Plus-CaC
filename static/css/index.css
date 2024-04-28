@@ -7,8 +7,6 @@ GENERAL
     margin: 0px;;
 }
 
-
-
 :root {
   --main-color1: #3C60DF;
   --main-color2: #FF4550;
@@ -49,6 +47,7 @@ header {
     padding-left: 3vw;   
     border-bottom: .5px solid black;
 }
+
 .menu-navegacion{
   padding-right: 7vw;
 }
@@ -81,7 +80,7 @@ SECTION 1 - BANNER
 -------------------------------------------------------------------------------- */
 
 #banner {
-    width: 94%;
+    width: 94vw;
     height: 86vh;
     background-image: url(../img/bannerimg.webp);
     background-size: cover;
@@ -93,29 +92,13 @@ SECTION 1 - BANNER
     display: flex;
     flex-direction: column;
     justify-content: end;
-  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
-  border: 1px solid black;
-
-}
-
-#naming {
-  /* font-family: "Oswald";
-  font-weight: 700;
-  font-size: 7em;
-  text-shadow: 1px 1px 1px black;
-  color: var(--main-color4); */
-  width: 500px;
-  position: relative;
-  top: 5vh
-  /*position: absolute;
-  top: 250px;
-  left: 50px;*/
+    border: 1px solid black;
 }
 
 #naming img {
-  width: 500px;
+  width: 600px;
+  margin-bottom: -50px;
 }
-
 
 #bajada {
   font-family: "Oswald";
@@ -123,12 +106,9 @@ SECTION 1 - BANNER
   font-size: 3em;
   text-shadow: 1px 1px 1px black;
   color: var(--main-color4);
-  width: 400%;
+  margin-bottom: 150px;
   position: relative;
   left: 25px;
-  /*position: absolute;
-  top: 475px;
-  left: 65px;*/
 }
 
 
@@ -155,20 +135,20 @@ SECTION 2 - SERVICIOS
 }
 
 .imagenes {
-  position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
+  position: relative;
   width: 100%;
   height: 400px;
 }
 
 .texto-imagenes {
-  position: absolute; /* Establece la posición absoluta */
-  top: 50%; /* Posiciona el texto en la mitad superior de la imagen */
-  left: 50%; /* Posiciona el texto en la mitad izquierda de la imagen */
-  transform: translate(-50%, -50%); /* Centra el texto correctamente */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255, .7);
   border-radius: 4%;
-  padding: 10px; /* Añade espacio alrededor del texto */
-  font-weight: bold; /* Hace que el texto sea más visible */
+  padding: 10px;
+  font-weight: bold;
   text-align: center;
   font-size: 1.5em;
   font-family: var(--body-fonts-1);
@@ -178,8 +158,6 @@ SECTION 2 - SERVICIOS
 /* ----------------------- ITEMS ----------------------- */ 
 
 #item0{
-  /*grid-column-start: 1;
-  grid-column-end: 4;*/
   text-align: center;
   margin-bottom: 30px;
 }
@@ -196,7 +174,6 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
   border: 1px solid black;
 
 }
@@ -224,7 +201,6 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
   border: 1px solid black;
 
      }
@@ -250,7 +226,6 @@ SECTION 2 - SERVICIOS
   background-position:initial;
   width: 100%;
   height: 400px;
-  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
   border: 1px solid black;
 
      }
@@ -277,7 +252,6 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
   border: 1px solid black;
 
      }
@@ -303,7 +277,6 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: 100%;
   height: 400px;
-  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
   border: 1px solid black;
 
      }
@@ -330,7 +303,6 @@ SECTION 2 - SERVICIOS
   background-position: center;
   width: auto;
   height: 400px;
-  /* box-shadow: 2px -1px 5px rgb(56, 56, 56); */
   border: 1px solid black;
 
      }
@@ -358,86 +330,86 @@ SECTION 3 - CONSULTAS
 -------------------------------------------------------------------------------- */
 
 #consultas {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: auto;
-      border: 1px solid black;
-      /* box-shadow: 1px 1px 1px black; */
-      width: 93vw;
-      margin-top: 75px;
-      margin-left: 3vw;
-      padding-top: 25px;
-      padding-bottom: 25px;
-      background-color: var(--main-color1);
-  }
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  border: 1px solid black;
+  width: 93vw;
+  margin-top: 75px;
+  margin-left: 3vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--main-color1);
+}
 
 #consultas-titulo {
-    width: 100%;
-    padding-top: 20px;
-    margin-top: 70px;
-    margin-left: 12%;
-  } 
+width: 100%;
+padding-top: 20px;
+margin-top: 70px;
+margin-left: 12%;
+} 
 
 #consultas-titulo h3{
-    text-align: left;
-    font-size: 3rem;
-    font-family: var(--body-fonts-1);
-    font-weight: 400;
-  }
+text-align: left;
+font-size: 3rem;
+font-family: var(--body-fonts-1);
+font-weight: 400;
+}
 
-  #consultas-left > p {
-    font-family: var(--body-fonts-2);
-    font-size: 1.5em;
-    font-weight: 100;
-    margin-left: 12%;
-    
-  }
+#consultas-left > p {
+font-family: var(--body-fonts-2);
+font-size: 1.5em;
+font-weight: 100;
+margin-left: 12%;
+
+}
+
 
 #consultas-right{
-  font-family: var(--body-fonts-2);
-  font-weight: 100;
-  padding-left: 50px;
+font-family: var(--body-fonts-2);
+font-weight: 100;
+padding-left: 50px;
 }
 
 #campo-mail, #campo-consulta, #campo-enviar {
-  margin-top: 10px;
-  
+margin-top: 10px;
+
 }
 
 #campo-nombre input {
-  border: 1px solid red;
-  height: 30px;
-  width: 70%;
-  margin-top: 10px;
+border: 1px solid red;
+height: 30px;
+width: 70%;
+margin-top: 10px;
 }
 
 #campo-mail input {
-  border: 1px solid red;
-  height: 30px;
-  width: 70%;
-  margin-top: 10px;
+border: 1px solid red;
+height: 30px;
+width: 70%;
+margin-top: 10px;
 
 }
 
 #campo-consulta textarea {
-  border: 1px solid red;
-  height: 100px;
-  width: 70%;
-  margin-top: 10px;
+border: 1px solid red;
+height: 100px;
+width: 70%;
+margin-top: 10px;
 }
 
 #campo-enviar input {
-  background-color: #FF4550;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  width: 50px;
-  padding: 3px;
+background-color: #FF4550;
+color: white;
+border: none;
+border-radius: 3px;
+width: 50px;
+padding: 3px;
 }
 
 #campo-enviar input[type="submit"] {
-  font-family: var(--body-fonts-2);
-  font-weight: 100;
+font-family: var(--body-fonts-2);
+font-weight: 100;
 }
 
 
@@ -501,21 +473,18 @@ margin-bottom: 0;
 
 
 #footer-right-mail::before {
-  margin-right: 3px;
   content: url(../img/iconos/footer/mail.png);
   vertical-align: middle; 
   display: inline-block; 
 }
 
 #footer-right-cel::before {
-  margin-right: 3px;
   content: url(../img/iconos/footer/tel.png);
   vertical-align: middle; 
   display: inline-block; 
 }
 
 #footer-right-ubic::before {
-  margin-right: 3px;
   content: url(../img/iconos/footer/ubicacion.png);
   vertical-align: middle; 
   display: inline-block; 
@@ -555,87 +524,129 @@ FUENTES
   src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Medium.otf);
 } */
 
+
+
+
 /* --------------------------------------------------------------------------------
 MEDIA QUERYES - 700
 -------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 700px){
-  .menu-navegacion{
-    margin-left: 1vw;
-  }
-  .menu-navegacion a{
-    font-size: 1em;
-    margin: 0px;
-  }
-  #logo{
-    height: 60px;
-    width: 100px
-  }
-  #banner{
-    width: 94%;
-    height: 70vh;
-  }
-  #naming{
-    width: 90vw;
-    /*top: 30vh;
-    left: 0px;*/
-  }
-  #naming img {
-    width: 90vw;
-  }
-   #bajada{
-    width: 90vw;
-    font-size: 1.8em;
-    /*left: 5vw;
-    top: 60vh;*/
 
-   } 
+.menu-navegacion a {
+    margin: 0 5px;
+    font-size: .8em;
+  }
+
+#naming img {
+  width: 400px;
+}
+
+#bajada {
+  font-size: 1.75em;
+}
+
+   #item0 h3{
+    margin-bottom: 30px;
+    font-size: 2.5em;
+  }
   
 #container-s2{
-    display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 250px 250px;
-    row-gap: 3vh;
-    column-gap: 5vw;
-    justify-content: center;
-    align-items: center;  
-}
-
-#container-s2 a{
-  color: black;
-}
-
-#container-s2 a:hover{
-  color: var(--main-color2);
 }
 
 .imagenes {
-  position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
-  width: 100%;
   height: 250px;
 }
 
 .texto-imagenes {
-  position: absolute; /* Establece la posición absoluta */
-  top: 50%; /* Posiciona el texto en la mitad superior de la imagen */
-  left: 50%; /* Posiciona el texto en la mitad izquierda de la imagen */
-  transform: translate(-50%, -50%); /* Centra el texto correctamente */
-  background-color: rgb(255, 255, 255, .7);
-  border-radius: 4%;
-  padding: 10px; /* Añade espacio alrededor del texto */
-  font-weight: bold; /* Hace que el texto sea más visible */
-  text-align: center;
   font-size: 1.5em;
-  font-family: var(--body-fonts-1);
   font-weight: 300;
 }
 
 #item1, #item2, #item3, #item4, #item5, #item6 {
   height: 250px;
 }
+
+/* CONSULTAS */
+
+#consultas {
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  row-gap: 30px;
+  width: 93vw;
+  margin-top: 30px;
+}
+
+#consultas-titulo {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 8%;
+} 
+
+#consultas-titulo h3{
+  font-size: 2.5rem;
+}
+
+#consultas-left > p {
+  font-size: 1.6em;
+  margin-left: 8%;
+}
+
+#campo-nombre input {
+width: 90%;
+}
+
+#campo-mail input {
+width: 90%;
+}
+
+#campo-consulta textarea {
+width: 90%;
 }
 
 
+/* FOOTER */
+
+footer {
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  row-gap: 25px;
+  margin-left: 3vw;
+  margin-bottom: 20px;
+}
+
+#footer-left {
+  padding: 40px 15px 0px 30px;
+}
+
+#footer-left p {
+  font-weight: 100;
+}
+
+#footer-left input{
+  width: 92%;
+}
+
+
+#footer-right {
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+  font-size: .65em;
+}
+
+#footer-right-info p{
+display: inline;
+}
+
+/* CREDITOS */
+
+#creditos {
+  font-size: .6rem;
+}
+
+}
 
 /* --------------------------------------------------------------------------------
 MEDIA QUERYES - 400
@@ -659,254 +670,63 @@ MEDIA QUERYES - 400
 
   #banner{
     width: 94%;
-    height: 70vh;
-  }
-
-
-  #naming{
-    width: 80vw;
+    height: 86vh;
   }
 
   #naming img {
-    width: 80vw;
+    width: 300px;
   }
-   #bajada{
-    width: 80vw;
-    margin-bottom: 100px;
-    font-size: 1.5em;
-    /*left: 5vw;
-    top: 60vh;*/
-
-   } 
+  
+  #bajada {
+    margin-top: 10px;
+    font-size: 1.25em;
+  }
   
 /* SERVICIOS */
 
 #item0 h3{
-  text-align: center;
   margin-bottom: 30px;
   font-size: 2.5em;
 }
 
 #container-s2{
-    display: grid;
     grid-template-columns: 93%;
     grid-template-rows: repeat(6, 200px);
     row-gap: 3vh;
-    column-gap: 5vw;
-    justify-content: center;
-    align-items: center;  
-}
-
-#container-s2 a{
-  color: black;
-}
-
-#container-s2 a:hover{
-  color: var(--main-color2);
 }
 
 .imagenes {
-  position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
-  width: 100%;
   height: 200px;
 }
-
-.texto-imagenes {
-  position: absolute; /* Establece la posición absoluta */
-  top: 50%; /* Posiciona el texto en la mitad superior de la imagen */
-  left: 50%; /* Posiciona el texto en la mitad izquierda de la imagen */
-  transform: translate(-50%, -50%); /* Centra el texto correctamente */
-  background-color: rgb(255, 255, 255, .7);
-  border-radius: 4%;
-  padding: 10px; /* Añade espacio alrededor del texto */
-  font-weight: bold; /* Hace que el texto sea más visible */
-  text-align: center;
-  font-size: 1.5em;
-  font-family: var(--body-fonts-1);
-  font-weight: 300;
-}
-
 
 #item1, #item2, #item3, #item4, #item5, #item6 {
   height: 200px;
 }
 
-/* CONSULTAS */
-
-#consultas {
-  display: grid;  
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  row-gap: 30px;
-  border: 1px solid black;
-  /* box-shadow: 1px 1px 1px black; */
-  width: 93vw;
-  margin-top: 30px;
-  margin-left: 3vw;
-  padding-bottom: 25px;
-  background-color: var(--main-color1);
-}
-
-
-
-#consultas-titulo {
-  width: 100%;
-  padding-top: 0px;
-  margin-top: 0px;
-  margin-left: 12%;
-} 
-
-#consultas-titulo h3{
-  text-align: left;
-  font-size: 2.5rem;
-  font-family: var(--body-fonts-1);
-  font-weight: 400;
-}
-
-#consultas-left > p {
-  font-family: var(--body-fonts-2);
-  font-size: 1.6em;
-  font-weight: 100;
-  margin-left: 12%;
-  
-}
-
-#consultas-right{
-font-family: var(--body-fonts-2);
-font-weight: 100;
-padding-left: 45px;
-}
-
-#campo-mail, #campo-consulta, #campo-enviar {
-margin-top: 10px;
-
-}
-
-#campo-nombre input {
-border: 1px solid red;
-height: 30px;
-width: 80%;
-margin-top: 10px;
-}
-
-#campo-mail input {
-border: 1px solid red;
-height: 30px;
-width: 80%;
-margin-top: 10px;
-
-}
-
-#campo-consulta textarea {
-border: 1px solid red;
-height: 100px;
-width: 80%;
-margin-top: 10px;
-}
-
-#campo-enviar input {
-background-color: #FF4550;
-color: white;
-border: none;
-border-radius: 3px;
-width: 50px;
-padding: 3px;
-}
-
-#campo-enviar input[type="submit"] {
-font-family: var(--body-fonts-2);
-font-weight: 100;
-}
-
-
-
-footer {
-  display: grid;
-  width: 93vw;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  row-gap: 25px;
-  margin-top: 20px;
-  margin-left: 3vw;
-  margin-bottom: 20px;
-  font-family: var(--body-fonts-2);
-  border: 1px solid black;
-  background-color: var(--main-color4);
-  /* box-shadow: 1px 1px 1px black; */
-}
-
+/* FOOTER */
 
 #footer-left {
-  padding: 40px 15px 0px 30px;
-  
-}
-
-#footer-left p {
-  font-weight: 100;
-}
-
-#footer-left input{
-  font-family: var(--body-fonts-1);
-  font-weight: 300;
-  border: 1px solid red;
-  height: 30px;
-  width: 92%;
-  margin-top: 10px;
-}
-
-#footer-left input::placeholder {
-  font-family: var(--body-fonts-2);
-  padding: 5px;
+  padding: 20px 15px 0px 30px;
 }
 
 #footer-right {
-  padding: 0px 0px 20px 0px;
-  font-weight: 100;
-  text-align: center;
   font-size: .65em;
-
-}
-
-#footer-right-info p{
-margin-top: 3px;
-vertical-align: middle;
-display: inline;
-margin-bottom: 0; 
-margin-right: 10px;
-
 }
 
 #footer-right-mail::before {
-  margin-right: 3px;
   content: url(#);
-  vertical-align: middle; 
-  display: inline-block; 
 }
 
 #footer-right-cel::before {
-  margin-right: 3px;
   content: url(#);
-  vertical-align: middle; 
-  display: inline-block; 
 }
 
 #footer-right-ubic::before {
-  margin-right: 3px;
   content: url(#);
-  vertical-align: middle; 
-  display: inline-block; 
 }
 
-
-
-
-
 #creditos {
-  font-family: var(--body-fonts-2);
-  font-weight: 100;
   font-size: .5rem;
-  text-align: center;
-  margin-bottom: 10px;
 }
 
 }
