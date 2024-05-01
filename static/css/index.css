@@ -88,7 +88,6 @@ SECTION 1 - BANNER
     margin-bottom: 3vh;
     position: relative;
     left: 3vw;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: end;

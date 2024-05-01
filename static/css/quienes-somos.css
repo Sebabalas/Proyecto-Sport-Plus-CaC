@@ -79,41 +79,39 @@ BODY
 SECTION 1 - BANNER
 -------------------------------------------------------------------------------- */
 
-.banner {
-    width: 93vw;
-    height: 88vh;
-    background-image: url(../img/bannerimg.webp);
-    background-size: cover;
-    margin-top: 12vh;
-    margin-bottom: 3vh;
-    position: relative;
-    left: 3vw;
-    overflow: hidden;
-    box-shadow: 2px -1px 5px rgb(56, 56, 56);
-    
+#banner-quienessomos {
+  width: 93vw;
+  height: 86vh;
+  background-image: url(../img/bannerquienessomos.png);
+  background-size: cover;
+  margin-top: 12vh;
+  margin-bottom: 3vh;
+  position: relative;
+  left: 3vw;
+  border: 1px solid black;
+  
 }
 
-.banner h1 {
-    font-family: "Oswald";
-    font-weight: 400;
-    font-size: 8rem;
-    text-shadow: 1px 1px 1px black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin: 60px;
-}
-
-.banner p{
+#banner-quienessomos h1 {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 8rem;
   text-shadow: 1px 1px 1px black;
-  color: var(--main-color4);
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+  color: white;
   text-align: center;
+  margin-top: 15%;
+}
+
+#banner-quienessomos p{
+font-family: "Oswald";
+font-weight: 400;
+font-size: 2rem;
+text-shadow: 1px 1px 1px black;
+color: var(--main-color4);
+display: flex;
+justify-content: center;
+padding: 20px;
+text-align: center;
 }
 
 
