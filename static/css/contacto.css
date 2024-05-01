@@ -233,7 +233,7 @@ SECTION - MAPA Y REDES
 #ubicacion-container{
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 450px;
+    grid-template-rows: 480px;
     border: 1px solid black;
     width: 93vw;
     margin-top: 30px;
@@ -243,7 +243,7 @@ SECTION - MAPA Y REDES
 
 #mapa {
     width: 100%;
-    height: 450px;
+    height: 480px;
     border: 0;
 }
 
@@ -263,8 +263,12 @@ SECTION - MAPA Y REDES
   font-family: "Oswald";
   font-weight: 200;
   font-size: 1.5rem;
-  
   }
+
+  #ubicacion-right-redes {
+    margin-top: 3px;
+    margin-left: 11%;
+    }
   
   #ubicacion-right-mail::before {
     margin-right: 10px;
@@ -292,32 +296,68 @@ SECTION - FAQ
 -------------------------------------------------------------------------------- */
 #faq {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     border: 1px solid black;
     width: 93vw;
     margin-top: 30px;
     margin-left: 3vw;
     background-color: var(--main-color5);
-}
-
-#faq-left {
-    width: 100%;
-    height: 400px;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #faq-right {
+    width: 90%;
+    font-family: "Oswald";
+    margin-left: 30px;
+}
 
+#faq-right a{
+    color: black;
+    text-decoration: none;
+}
 
+#faq-right a:hover {
+    color: var(--main-color4);
+}
+
+#faq-right hr {
+    border: 1px solid black;
+    margin-top: 15px;
 }
 
 .faq-pregunta {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+font-weight: 300;
+font-size: 1.3rem;
+margin-top: 10px;
+}
 
+.faq-pregunta img{
+    margin-left: 25px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
 }
 
 .faq-respuesta {
+    font-weight: 100;
+    font-size: 1rem;
+    padding-top: 10px;
+    text-align:left;
+    display: none;
+}
 
+.faq-respuesta:target {
+    display: block;
+} 
+
+.faq-respuesta :nth-child(3) a{
+    color: var(--main-color4);
 }
 
 /*--------------------------------------------------------------------------------
