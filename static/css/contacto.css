@@ -130,27 +130,23 @@ SECTION 2 - FORMULARIO
     padding-bottom: 25px;
     background-color: var(--main-color1);
   }
-  
-  .titulos {
-  width: 100%;
-  padding-top: 20px;
-  margin-top: 70px;
-  margin-left: 12%;
-  } 
-  
-  .titulos h3{
-  text-align: left;
+
+.cajadetitulos {
+    width: 80%;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+.cajadetitulos h3 {
   font-size: 3rem;
   font-family: var(--body-fonts-1);
   font-weight: 400;
   }
   
-  #cc-left > p {
+.cajadetitulos p {
   font-family: var(--body-fonts-2);
   font-size: 1.5em;
   font-weight: 100;
-  margin-left: 12%;
-  
   }
   
   #cc-right{
@@ -246,28 +242,21 @@ SECTION - MAPA Y REDES
     height: 480px;
     border: 0;
 }
-
-#ubicacion-right {
-    padding: 20px 100px 20px 20px;
-    font-weight: 100;
-    text-align: left;
-
-  }
-  
+ 
   
   #ubicacion-right-info p{
-  margin-top: 3px;
   vertical-align: middle;
   margin-bottom: 0; 
-  margin-left: 12%;
+  padding-top: 3px;
+  padding-left: 40px;
   font-family: "Oswald";
   font-weight: 200;
   font-size: 1.5rem;
   }
 
   #ubicacion-right-redes {
-    margin-top: 3px;
-    margin-left: 11%;
+    padding-top: 3px;
+    padding-left: 35px;
     }
   
   #ubicacion-right-mail::before {
@@ -296,7 +285,7 @@ SECTION - FAQ
 -------------------------------------------------------------------------------- */
 #faq {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     border: 1px solid black;
     width: 93vw;
@@ -308,9 +297,8 @@ SECTION - FAQ
 }
 
 #faq-right {
-    width: 90%;
+    width: 80%;
     font-family: "Oswald";
-    margin-left: 30px;
 }
 
 #faq-right a{
@@ -369,22 +357,18 @@ footer {
     width: 93vw;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 3vw;
     margin-bottom: 20px;
     font-family: var(--body-fonts-2);
     border: 1px solid black;
     background-color: var(--main-color4);
-    /* box-shadow: 1px 1px 1px black; */
-   
+    font-weight: 100;
+    padding-bottom: 10px;
   }
   
   #footer-left {
-    padding: 35px 20px 20px 70px;
-  }
-  
-  #footer-left p {
-    font-weight: 100;
+    width: 100%;
   }
   
   #footer-left input{
@@ -392,7 +376,7 @@ footer {
     font-weight: 300;
     border: 1px solid red;
     height: 30px;
-    width: 70%;
+    width: 300px;
     margin-top: 10px;
   }
   
