@@ -138,8 +138,8 @@ table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #e74c3c; /* Color de fondo rojo */
-    color: #fff;
+    background-color: var(--main-color2); /* Color de fondo rojo */
+    color: black
 }
 th, td {
     border: 1px solid #ddd;
@@ -150,7 +150,10 @@ th {
     background-color: #f2f2f2;
     color: black;
 }
-
+table, th, td{
+  font-family: "Oswald";
+  font-weight: 400;
+}
 
 .instructor img{
     max-width: 100%; /* La imagen nunca será más ancha que el contenedor */
@@ -203,78 +206,86 @@ SECTION 3 - CONSULTAS
 -------------------------------------------------------------------------------- */
 
 #consultas {
-      width: 93vw;
-      height: auto;
-      padding-bottom: 20px;
-      background-color:  var(--main-color1);
-      margin-top: 6vh;
-      margin-bottom: 3vh;
-      position: relative;
-      left: 3vw;
-      border: 1px solid black;
-  }
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  border: 1px solid black;
+  width: 93vw;
+  margin-top: 75px;
+  margin-left: 3vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--main-color1);
+}
 
-#consultas-titulo{
-    width: 100%;
-    padding-top: 20px;
-  } 
+#consultas-titulo {
+width: 100%;
+padding-top: 20px;
+margin-top: 70px;
+margin-left: 12%;
+} 
 
 #consultas-titulo h3{
-    text-align: center;
-    font-size: 1.5em;
-    font-family: var(--body-fonts-1);
-    font-weight: 400;
-  }
-
-#consultas-formulario{
-    display:grid;
-    grid-template-columns: 35% 65%;
-    align-content: left;
-    margin-top: 30px;
-    margin-bottom: 3vh;
-    column-gap: 5%;   
+text-align: left;
+font-size: 3rem;
+font-family: var(--body-fonts-1);
+font-weight: 400;
 }
 
-#consultas-formulario-left > p{
-  font-family: var(--body-fonts-2);
-  font-size: 1.5em;
-  font-weight: 100;
-  margin-left: 10%;
-  
+#consultas-left > p {
+font-family: var(--body-fonts-2);
+font-size: 1.5em;
+font-weight: 100;
+margin-left: 12%;
+
 }
 
-#consultas-formulario-right{
-  font-family: var(--body-fonts-2);
-  font-weight: 100;
-  
+
+#consultas-right{
+font-family: var(--body-fonts-2);
+font-weight: 100;
+padding-left: 50px;
 }
 
 #campo-mail, #campo-consulta, #campo-enviar {
-  margin-top: 10px;
-  
+margin-top: 10px;
+
 }
 
 #campo-nombre input {
-  border: 1px solid red;
-  height: 30px;
-  width: 350px;
-  margin-top: 10px;
+border: 1px solid red;
+height: 30px;
+width: 70%;
+margin-top: 10px;
 }
 
 #campo-mail input {
-  border: 1px solid red;
-  height: 30px;
-  width: 350px;
-  margin-top: 10px;
+border: 1px solid red;
+height: 30px;
+width: 70%;
+margin-top: 10px;
 
 }
 
 #campo-consulta textarea {
-  border: 1px solid red;
-  height: 100px;
-  width: 350px;
-  margin-top: 10px;
+border: 1px solid red;
+height: 100px;
+width: 70%;
+margin-top: 10px;
+}
 
+#campo-enviar input {
+background-color: #FF4550;
+color: white;
+border: none;
+border-radius: 3px;
+width: 50px;
+padding: 3px;
+}
+
+#campo-enviar input[type="submit"] {
+font-family: var(--body-fonts-2);
+font-weight: 100;
 }
 
 
