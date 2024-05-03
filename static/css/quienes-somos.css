@@ -140,10 +140,11 @@ SECTION 2 - SERVICIOS
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: 400px;
+    height: auto;
     background-color: var(--main-color5);
     margin: 10px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .instructor img{
@@ -162,11 +163,16 @@ SECTION 2 - SERVICIOS
 
 .instructor p{
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
 }
+.nombre-instructor{
+  font-weight: bold;
+}
+
 .instructor h4{
     text-align: center;
     padding: 5px;
+    font-size: 1.5rem;
 }
 
 .imagenes {
