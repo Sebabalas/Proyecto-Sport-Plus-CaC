@@ -121,6 +121,7 @@ SECTION 2 - HORARIOS
 .seccion-horarios h2{
     text-align: center;
     font-size: 3rem;
+    font-family: var(--body-fonts-1);;
   }
 .seccion-horarios{
   background-color: var(--main-color3);
@@ -155,54 +156,117 @@ table, th, td{
   font-weight: 400;
 }
 
-.instructor img{
-    max-width: 100%; /* La imagen nunca será más ancha que el contenedor */
-    max-height: 80%; /* La imagen nunca será más alta que el contenedor */
-    width: auto; /* Ancho automático para mantener la proporción */
-    height: auto; /* Alto automático para mantener la proporción */
-    display: block; /*Para evitar espacios en blanco debajo de la imagen*/
-    box-shadow: 2px -1px 5px rgb(56, 56, 56);
-    transition: transform 0.3s; /* Animación de la propiedad transform */
-}
-
-.instructor img:hover{
-    transform: scale(1.1); /* Hace un zoom del 10% cuando se pasa el cursor por encima */
-}
-
-.instructor p{
-    text-align: center;
-    padding-top: 10px;
-}
-.instructor h4{
-    text-align: center;
-    padding: 5px;
-}
-
-.imagenes {
-  position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
-  width: 100%;
-  height: 400px;
-}
-
-.texto-imagenes {
-  position: absolute; /* Establece la posición absoluta */
-  top: 50%; /* Posiciona el texto en la mitad superior de la imagen */
-  left: 50%; /* Posiciona el texto en la mitad izquierda de la imagen */
-  transform: translate(-50%, -50%); /* Centra el texto correctamente */
-  background-color: rgb(255, 255, 255, .7);
-  border-radius: 4%;
-  padding: 10px; /* Añade espacio alrededor del texto */
-  font-weight: bold; /* Hace que el texto sea más visible */
-  text-align: center;
-  font-size: 1.5em;
-  font-family: var(--body-fonts-1);
-  font-weight: 300;
-}
-
-
-
 /* --------------------------------------------------------------------------------
-SECTION 3 - CONSULTAS 
+SECTION 3 - PLANES Y PRECIOS
+-------------------------------------------------------------------------------- */
+
+.seccion-planes-y-precios {
+  text-align: center;
+  background-color: var(--main-color5);
+  width: 93vw;
+  margin-top: 6vh;
+  margin-bottom: 3vh;
+  position: relative;
+  left: 3vw;
+  border: 1px solid black;
+  font-family: var(--body-fonts-2);
+}
+
+.seccion-planes-y-precios h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--body-fonts-1);
+    margin-bottom: 30px;
+  }
+
+.plan-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background-color: white;
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+}
+
+.plan-titulo {
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.plan-titulo h3 {
+  margin: 0;
+}
+
+.plan-descripcion {
+  padding: 20px;
+  text-align: left;
+}
+
+.plan-precio {
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Colores según categoría */
+
+.plan-bronce .plan-titulo {
+  background-color: #cd7f32; /* Bronce */
+  color: black;
+}
+
+.plan-plata .plan-titulo {
+  background-color: #c0c0c0; /* Plata */
+  color: black;
+}
+
+.plan-oro .plan-titulo {
+  background-color: #ffd700; /* Oro */
+  color: black;
+}
+
+.plan-diamante .plan-titulo {
+  background-color: #4169e1; /* Diamante */
+  color: black;
+}
+
+.plan-bronce .plan-precio {
+  background-color: #cd7f32; /* Bronce */
+  color: black;
+}
+
+.plan-plata .plan-precio {
+  background-color: #c0c0c0; /* Plata */
+  color: black;
+}
+
+.plan-oro .plan-precio {
+  background-color: #ffd700; /* Oro */
+  color: black;
+}
+
+.plan-diamante .plan-precio {
+  background-color: #4169e1; /* Diamante */
+  color: black;
+}
+
+.plan-precio p {
+  margin: 0;
+  font-weight: bold;
+}
+/* --------------------------------------------------------------------------------
+SECTION 4 - CONSULTAS 
 -------------------------------------------------------------------------------- */
 
 #consultas {
