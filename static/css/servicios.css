@@ -275,7 +275,7 @@ SECTION 4 - CONSULTAS
   grid-template-rows: auto;
   border: 1px solid black;
   width: 93vw;
-  margin-top: 75px;
+  margin-top: 6vh;
   margin-left: 3vw;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -362,7 +362,7 @@ footer {
     width: 93vw;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1;
-    margin-top: 20px;
+    margin-top: 6vh;
     margin-left: 3vw;
     margin-bottom: 20px;
     font-family: var(--body-fonts-2);
@@ -458,7 +458,79 @@ FUENTES
   font-style: normal;
 }
 
-/* @font-face {
+/* --------------------------------------------------------------------------------
+MEDIA QUERYES - 700
+-------------------------------------------------------------------------------- */
+
+
+/* Media Query para pantallas con un ancho máximo de 700px */
+@media screen and (max-width: 700px) {
+  .menu-navegacion {
+    text-align: center;
+    padding: 0;
+  }
+
+  .menu-navegacion a {
+    margin: 0 10px;
+  }
+
+  .seccion-horarios h2,
+  .seccion-planes-y-precios h2 {
+    font-size: 2.5rem;
+  }
+
+  #consultas-titulo {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #consultas-left,
+  #consultas-right {
+    text-align: center;
+  }
+
+  #campo-nombre,
+  #campo-mail,
+  #campo-consulta,
+  #campo-enviar {
+    margin-top: 20px;
+  }
+
+  footer {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  #footer-left {
+    padding: 20px;
+  }
+
+  #footer-left input {
+    width: 90%;
+  }
+
+  #footer-right {
+    padding: 20px;
+  }
+
+  #footer-right-info p {
+    margin: 5px 0;
+  }
+}
+
+/* Media Query para pantallas con un ancho máximo de 400px */
+@media screen and (max-width: 400px) {
+  table {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+
+  th, td {
+    min-width: 100px;
+    white-space: nowrap;
+  }
+}/* @font-face {
   font-family: "cooper-hewitt-thin";
   src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Thin.otf);
 }
