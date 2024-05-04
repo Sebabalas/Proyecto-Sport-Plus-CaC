@@ -419,3 +419,14 @@ FUENTES
   src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Medium.otf);
 } */
 
+/* ------------------------------------------------------------ */
+/* Media queries */
+@media screen and (max-width: 700px){
+  #banner-contacto h1{
+    font-size: 650%;
+  }
+  .menu-navegacion a {
+    margin: 0 10px;
+  }
+
+}

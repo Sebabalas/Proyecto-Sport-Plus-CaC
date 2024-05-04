@@ -534,7 +534,7 @@ MEDIA QUERYES - 700
 
 .menu-navegacion a {
     margin: 0 5px;
-    font-size: .8em;
+    /* font-size: .8em; */
   }
 
 #naming img {

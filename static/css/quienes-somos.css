@@ -79,7 +79,7 @@ BODY
 SECTION 1 - BANNER
 -------------------------------------------------------------------------------- */
 
-#banner-quienessomos {
+.banner-quienessomos {
   width: 93vw;
   height: 86vh;
   background-image: url(../img/banners/bannerquienessomos.png);
@@ -92,7 +92,7 @@ SECTION 1 - BANNER
   
 }
 
-#banner-quienessomos h1 {
+.banner-quienessomos h1 {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 8rem;
@@ -102,7 +102,7 @@ SECTION 1 - BANNER
   margin-top: 150px;
 }
 
-#banner-quienessomos p{
+.banner-quienessomos p{
 font-family: "Oswald";
 font-weight: 400;
 font-size: 2rem;
@@ -245,7 +245,7 @@ SECTION 3 - CONSULTAS
 #consultas-formulario-right{
   font-family: var(--body-fonts-2);
   font-weight: 100;
-  
+  padding-left: 50px;
 }
 
 #campo-mail, #campo-consulta, #campo-enviar {
@@ -256,14 +256,14 @@ SECTION 3 - CONSULTAS
 #campo-nombre input {
   border: 1px solid red;
   height: 30px;
-  width: 350px;
+  width: 70%;
   margin-top: 10px;
 }
 
 #campo-mail input {
   border: 1px solid red;
   height: 30px;
-  width: 350px;
+  width: 70%;
   margin-top: 10px;
 
 }
@@ -271,11 +271,20 @@ SECTION 3 - CONSULTAS
 #campo-consulta textarea {
   border: 1px solid red;
   height: 100px;
-  width: 350px;
+  width: 70%;
   margin-top: 10px;
 
 }
-
+#campo-enviar input {
+  background-color: #FF4550;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 50px;
+  padding: 3px;
+  }
+ 
+    
 
 /*--------------------------------------------------------------------------------
 FOOTER
@@ -392,3 +401,22 @@ FUENTES
   src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Medium.otf);
 } */
 
+/* ----------------------------------------------------- */
+
+/* ------------------------------------------------------ */
+/* Media Query para pantallas con un ancho máximo de 700px */
+
+@media screen and (max-width: 700px){
+
+  .banner-quienessomos{
+    height: auto;
+  }
+  
+  .banner-quienessomos h1{
+    font-size: 650%;
+  }
+  .menu-navegacion a {
+    margin: 0 10px;
+  }
+
+}
