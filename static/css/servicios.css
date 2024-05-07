@@ -119,9 +119,11 @@ text-align: center;
 SECTION 2 - HORARIOS
 -------------------------------------------------------------------------------- */
 .seccion-horarios h2{
-    text-align: center;
+text-align: center;
+    font-family: var(--body-fonts-1);
     font-size: 3rem;
-    font-family: var(--body-fonts-1);;
+    font-weight: 400;
+
   }
 .seccion-horarios{
   background-color: var(--main-color3);
@@ -171,10 +173,12 @@ SECTION 3 - PLANES Y PRECIOS
 }
 
 .seccion-planes-y-precios h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-family: var(--body-fonts-1);
-    margin-bottom: 30px;
+  text-align: center;
+  font-family: var(--body-fonts-1);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+
   }
 
 .plan-container {
@@ -187,7 +191,7 @@ SECTION 3 - PLANES Y PRECIOS
   background-color: white;
   width: 250px;
   height: auto;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -200,7 +204,7 @@ SECTION 3 - PLANES Y PRECIOS
 
 .plan-titulo {
   padding: 20px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .plan-titulo h3 {
@@ -214,7 +218,7 @@ SECTION 3 - PLANES Y PRECIOS
 
 .plan-precio {
   padding: 20px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 5px 5px;
 }
 
 /* Colores según categoría */
