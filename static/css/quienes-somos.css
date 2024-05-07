@@ -31,6 +31,7 @@ body{
   background-color: white;
 }
 
+
 /* --------------------------------------------------------------------------------
 HEADER
 -------------------------------------------------------------------------------- */
@@ -126,7 +127,9 @@ SECTION 2 - SERVICIOS
 
 .container-s2 h1{
   text-align: center;
+  font-family: var(--body-fonts-1);
   font-size: 3rem;
+  font-weight: 400;
 }
 
 .instructores{
@@ -164,7 +167,9 @@ SECTION 2 - SERVICIOS
 .instructor p{
     text-align: center;
     padding: 10px;
-}
+    font-family: "cooper-hewitt-light";
+  }
+
 .nombre-instructor{
   font-weight: bold;
 }
@@ -172,7 +177,9 @@ SECTION 2 - SERVICIOS
 .instructor h4{
     text-align: center;
     padding: 5px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    font-family: var(--body-fonts-1);
+    font-weight: 300;
 }
 
 .imagenes {
@@ -391,15 +398,23 @@ FUENTES
   font-style: normal;
 }
 
-/* @font-face {
+@font-face {
   font-family: "cooper-hewitt-thin";
   src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Thin.otf);
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "cooper-hewitt-medium";
   src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Medium.otf);
-} */
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "cooper-hewitt-light";
+  src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Light.otf);
+  font-weight: 400;
+}
 
 /* ----------------------------------------------------- */
 
