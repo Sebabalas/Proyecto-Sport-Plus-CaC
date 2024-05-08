@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -112,6 +112,7 @@
 
                     <input type="checkbox" name="servicios" id="zumba" value="zumba">
                     <label for="zumba">Zumba</label>
+                </div>
             </div>
 
             <div class="campo-form-1"> <!-- SELECT -->
@@ -149,6 +150,8 @@
                 <input type="submit" value="Borrar">
             </div>
 
+            <div id="resultado">
+            </div>
         </form>
   
     </div>
@@ -187,28 +190,28 @@
 
     <div id="faq-right">
         <div>
-            <p class="faq-pregunta"><a href="#respuesta1">¿Cuáles son los horarios de apertura y cierre del gimnasio<img src="../static/img/iconos/contacto/arrowDown.svg"></a></p>
+            <p class="faq-pregunta"><a href="#respuesta1">¿Cuáles son los horarios de apertura y cierre del gimnasio<img src="../static/img/iconos/contacto/arrowDown.svg" alt="flechaabajo"></a></p>
             <p class="faq-respuesta" id="respuesta1">Nuestro gimnasio está abierto de lunes a viernes de 8 a 22, y los sábados de 8 a 17.</p>
         </div>
         <hr>
         <div>
-            <p class="faq-pregunta"><a href="#respuesta2">¿Qué tipos de suscripciones ofrecen y cuáles son sus costos?<img src="../static/img/iconos/contacto/arrowDown.svg"></a></p>
+            <p class="faq-pregunta"><a href="#respuesta2">¿Qué tipos de suscripciones ofrecen y cuáles son sus costos?<img src="../static/img/iconos/contacto/arrowDown.svg" alt="flechaabajo"></a></p>
             <p class="faq-respuesta" id="respuesta2">Ofrecemos una variedad de opciones de membresía para adaptarnos a tus necesidades y presupuesto, incluidos planes anuales y mensuales. Para conocer más sobre nuestros precios y las opciones disponibles, por favor visita nuestra sección de <a href="servicios.html">Servicios</a></p>
         </div>
         <hr>
         <div>
-            <p class="faq-pregunta"><a href="#respuesta3">¿Necesito el apto médico para empezar a entrenar?<img src="../static/img/iconos/contacto/arrowDown.svg"></a></p>
+            <p class="faq-pregunta"><a href="#respuesta3">¿Necesito el apto médico para empezar a entrenar?<img src="../static/img/iconos/contacto/arrowDown.svg" alt="flechaabajo"></a></p>
             <p class="faq-respuesta" id="respuesta3">Tu apto médico vigente es obligatorio al momento de iniciar una actividad física. Según la ley 139 art. 3 en decreto reglamentario Nº 1821, art. 6: (para Capital Federal) y la ley 12329 art. 9 (para la provincia de Bs. As.) es obligatorio tener el apto médico al día para ingresar a nuestras instalaciones.</p>
         </div>
         <hr>
         <div>
-            <p class="faq-pregunta"><a href="#respuesta4">¿Cómo se abona la cuota?<img src="../static/img/iconos/contacto/arrowDown.svg"></a></p>
+            <p class="faq-pregunta"><a href="#respuesta4">¿Cómo se abona la cuota?<img src="../static/img/iconos/contacto/arrowDown.svg" alt="flechaabajo"></a></p>
             <p class="faq-respuesta" id="respuesta4">En un plan mensual, el primer cargo en tu cuenta se genera al momento de tu alta y corresponde al primer mes de vigencia de tu Plan. La vigencia se renueva de forma automática cada mes el mismo día en el que te diste de alta. <br>
             El plan anual se paga una única vez y el monto será distribuido en el número de cuotas que selecciones al momento de realizar la compra.</p>
         </div>
         <hr>
         <div>
-            <p class="faq-pregunta"><a href="#respuesta5">¿Cómo hago un reclamo?<img src="../static/img/iconos/contacto/arrowDown.svg"></a></p>
+            <p class="faq-pregunta"><a href="#respuesta5">¿Cómo hago un reclamo?<img src="../static/img/iconos/contacto/arrowDown.svg" alt="flechaabajo"></a></p>
             <p class="faq-respuesta" id="respuesta5">Para realizar un reclamo, completá el formulario de contacto que se encuentra en esta página y un asesor se comunicará con vos.</p>
         </div>
     </div>
@@ -224,16 +227,15 @@
         <p>
         Suscribite para recibir nuestras novedades
         </p>
-    
+       
+        <form name="newsletter" action="https://formspree.io/f/xayrvrlg" method="post">
          <div>
-            <form name="newsletter" action="https://formspree.io/f/xayrvrlg" method="post">
-         <input type="email" name="correo" id="correo" placeholder="Escribí tu correo acá"> 
+            <input type="email" name="correo" id="correo" placeholder="Escribí tu correo acá"> 
          </div>
-
          <div id="newsletter-enviar">
-            <input type="submit" value="Enviar">
-            </form>
+            <input type="submit" value="Enviar">    
         </div>
+         </form>
     </div>
 </footer>
 
