@@ -51,40 +51,40 @@
 
     <div id="cc-right">
        
-        <form id="form-contacto" name="miformulario" action="url" method="post">
+        <form id="form-contacto" name="Contacto" action="https://formspree.io/f/mzbnonyz" method="post">
            
             <div class="campo-form-1">
                 <div>
                 <label for="nombre">Nombre y apellido </label>
                 </div>
-                <input type="text" name="nombre" id="nombre">  
+                <input type="text" name="nombre" id="nombre" required>  
              </div>
             
             <div class="campo-form-1">
                 <div>
                 <label for="mail">Email </label>
                 </div>
-                <input type="email" name="mail" id="mail">
+                <input type="email" name="mail" id="mail" required>
             </div>
            
             <div class="campo-form-1">
                 <div>
                 <label for="tel">Teléfono </label>
                 </div>
-                <input type="text" name="tel" id="tel">
+                <input type="text" name="tel" id="tel" required>
             </div>
 
             <div class="campo-form-1"> <!-- RADIO BUTTON -->
 
                 <h4>Género</h4>
 
-                <input type="radio" name="genero" id="mujer" value="Mujer">
+                <input type="radio" name="genero" id="mujer" value="Mujer" required>
                 <label for="mujer">Mujer</label>
 
-                <input type="radio" name="genero" id="hombre" value="Hombre">
+                <input type="radio" name="genero" id="hombre" value="Hombre" required>
                 <label for="hombre">Hombre</label>
 
-                <input type="radio" name="genero" id="otro" value="Otro">
+                <input type="radio" name="genero" id="otro" value="Otro" required>
                 <label for="otro">Otro</label>
 
             </div>
@@ -117,11 +117,12 @@
             <div class="campo-form-1"> <!-- SELECT -->
                 <h4>Plan</h4>
 
-                <input list="plan" id="plan" name="plan">
-                <datalist id="plan">
-                    <option value="Platino">Platino</option>
+                <input list="lista-plan" id="plan" name="plan">
+                <datalist id="lista-plan">
+                    <option value="Diamante">Diamente</option>
                     <option value="Oro">Oro</option>
                     <option value="Plata">Plata</option>
+                    <option value="Plata">Bronce</option>
                 </datalist>
             </div>
 
