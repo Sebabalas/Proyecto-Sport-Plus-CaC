@@ -470,15 +470,18 @@ FUENTES
 } */
 
 /* ------------------------------------------------------------ */
+/* MEDIA QUERIES */
+/* ------------------------------------------------------------ */
 
-/* Media queries */
+
+
+/* MAX 700 */
+/* ------------------------------------------------------------ */
+
+
 @media screen and (max-width: 700px){
 
 
-.menu-navegacion {
-  display: flex;
-}
- 
 .menu-navegacion a {
     font-size: 1rem;
     display: flex;
@@ -488,6 +491,11 @@ FUENTES
     flex-wrap: wrap;
   }
   
+
+#banner-contacto {
+    height: 65vh;
+  }
+
 #banner-contacto h1{
     font-size: 5rem;
   }
@@ -613,10 +621,153 @@ footer {
 
 }
 
-  
+/* MAX 400 */
+/* ------------------------------------------------------------ */
 
 
 @media screen and (max-width: 400px){
 
-   
+  .menu-navegacion a {
+    font-size: .7rem;
+    display: flex;
+    align-items: center; 
+    margin: 0 5px 0px 0px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  #banner-contacto {
+    height: 55vh;
+  }
+  
+#banner-contacto h1{
+    font-size: 3rem;
+  }
+
+#banner-contacto p{
+    font-size: 1.1rem;
+  }
+
+#consultas-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  } 
+
+#cc-left{
+  text-align: center;
+  width: 80%;
 }
+
+#cc-left h3 {
+  font-size: 1.5rem;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  }
+  
+#cc-left p {
+  font-size: .8em;
+  padding-left: 0px;
+  }
+
+#cc-right{
+    width: 80%;
+  }
+  
+h4 {
+  font-size: .70rem;
+}
+label {
+  font-size: .70rem;
+}
+
+.campo-form-2 input {
+font-size: .70rem;
+  }
+
+.campo-form-1 input[type="file"]  {
+    margin: 10px 0px 0px 0px;
+    }
+
+ #ubicacion-right {
+      padding:20px 20px 20px 0px;
+    }
+
+#ubicacion-right h3 {
+  padding: 0px;
+  font-size: 1.5rem;
+  }
+
+#ubicacion-right-info p{
+    font-size: .9rem;
+    }
+
+    #ubicacion-right-redes img {
+      width: 30px;
+      height: 30px;
+    }
+    
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#faq-left{
+  text-align: center;
+}
+
+#faq-left h3{
+  font-size: 1.5rem;
+  padding-left: 0px;
+}
+#faq-right {
+  width: 80%;
+  }
+
+.faq-pregunta {
+    font-size: .8rem;
+    margin-top: 10px;
+  }
+
+.faq-respuesta {
+    font-size: .70rem;
+}
+
+#faq-right hr {
+  border: .7px solid black;
+  margin-top: 15px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+#footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+#footer-left p {
+  font-weight: 100;
+  text-align: center;
+  font-size: .8rem;
+}
+
+#footer-left input{
+  width: 100%;
+}
+
+
+}
+   
