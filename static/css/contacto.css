@@ -132,22 +132,18 @@ SECTION 2 - FORMULARIO
     background-color: var(--main-color1);
   } 
 
-.cajadetitulos {
-    width: 80%;
-    padding-top: 50px;
-    padding-left: 40px;
-}
-
-.cajadetitulos h3 {
+#cc-left h3 {
   font-size: 3rem;
   font-family: var(--body-fonts-1);
   font-weight: 400;
+  padding-left: 35px;
   }
   
-.cajadetitulos p {
+#cc-left p {
   font-family: var(--body-fonts-2);
   font-size: 1.5em;
   font-weight: 100;
+  padding-left: 35px;
   }
   
   #cc-right{
@@ -236,30 +232,38 @@ SECTION - MAPA Y REDES
 
 #ubicacion-container{
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 480px;
+    grid-template-columns: 50% 50%;
     border: 1px solid black;
     width: 93vw;
+    grid-auto-rows: max-content;
     margin-top: 30px;
     margin-left: 3vw;
     background-color: var(--main-color3);
 }
 
 #mapa {
-    width: 100%;
-    height: 480px;
+    width: 90%;
+    height: 100%;
     border: 0;
 }
  
 #ubicacion-right {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding:20px 0px 20px 00px;
 }
+
+#ubicacion-right h3 {
+  font-size: 3rem;
+  font-family: var(--body-fonts-1);
+  font-weight: 400;
+  }
+
   
   #ubicacion-right-info p{
   margin-bottom: 0; 
   padding-top: 3px;
-  padding-left: 40px;
   font-family: "Oswald";
   font-weight: 200;
   font-size: 1.5rem;
@@ -267,7 +271,6 @@ SECTION - MAPA Y REDES
 
   #ubicacion-right-redes {
     padding-top: 3px;
-    padding-left: 35px;
     }
 
   #ubicacion-right-redes img {
@@ -301,7 +304,7 @@ SECTION - FAQ
 -------------------------------------------------------------------------------- */
 #faq {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     border: 1px solid black;
     width: 93vw;
@@ -310,6 +313,13 @@ SECTION - FAQ
     background-color: var(--main-color5);
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#faq-left h3{
+    font-size: 3rem;
+    font-family: var(--body-fonts-1);
+    font-weight: 400;
+    padding-left: 35px;
 }
 
 #faq-right {
@@ -379,7 +389,6 @@ footer {
   font-family: var(--body-fonts-2);
   border: 1px solid black;
   background-color: var(--main-color4);
-  /* box-shadow: 1px 1px 1px black; */
  
 }
 
@@ -388,7 +397,7 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
-  padding: 20px 0px 20px 80px;
+  padding: 20px 0px 20px 40px;
 }
 
 #footer-left p {
@@ -417,27 +426,6 @@ footer {
   padding-right: 80px;
   font-family: var(--body-fonts-2);
   font-weight: 300;
-}
-
-#footer-right-mail::before {
-  content: url(../img/iconos/footer/mail.png);
-  vertical-align: middle; 
-  display: inline-block; 
-  margin-right: 5px;
-}
-
-#footer-right-cel::before {
-  content: url(../img/iconos/footer/tel.png);
-  vertical-align: middle; 
-  display: inline-block; 
-  margin-right: 5px;
-}
-
-#footer-right-ubic::before {
-  content: url(../img/iconos/footer/ubicacion.png);
-  vertical-align: middle; 
-  display: inline-block; 
-  margin-right: 5px;
 }
   
   
@@ -475,8 +463,11 @@ FUENTES
 } */
 
 /* ------------------------------------------------------------ */
+
 /* Media queries */
 @media screen and (max-width: 700px){
+  
+  
   #banner-contacto h1{
     font-size: 650%;
   }
@@ -484,4 +475,77 @@ FUENTES
     margin: 0 10px;
   }
 
+
+#ubicacion-right h3 {
+  padding: 0px;
+  font-size: 1.75rem;
+  }
+
+  #ubicacion-right-info p{
+    font-size: 1.2rem;
+    }
+
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
+#faq-left{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#faq-left h3{
+  font-size: 2rem;
+  padding-left: 0px;
+}
+#faq-right {
+  width: 80%;
+  }
+
+.faq-pregunta {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+
+.faq-respuesta {
+    font-size: .90rem;
+}
+
+#faq-right hr {
+  border: .7px solid black;
+  margin-top: 15px;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+#footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+#footer-left p {
+  font-weight: 100;
+  text-align: center;
+}
+
+#footer-left input{
+  width: 100%;
+}
+
+
+}
+
+  
