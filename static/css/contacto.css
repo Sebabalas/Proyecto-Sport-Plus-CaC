@@ -45,11 +45,10 @@ header {
     top: 0px;
     left: 0px;
     justify-content: space-between;
-    align-items: center;
     padding-left: 3vw;  
 }
 .menu-navegacion{
-  padding-right: 7vw;
+  display: flex;
 }
 
 .menu-navegacion a {
@@ -89,6 +88,9 @@ SECTION 1 - BANNER
     position: relative;
     left: 3vw;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
@@ -99,7 +101,6 @@ SECTION 1 - BANNER
     text-shadow: 1px 1px 1px black;
     color: white;
     text-align: center;
-    margin-top: 150px;
 }
 
 #banner-contacto p{
@@ -108,9 +109,6 @@ SECTION 1 - BANNER
   font-size: 2rem;
   text-shadow: 1px 1px 1px black;
   color: var(--main-color4);
-  display: flex;
-  justify-content: center;
-  padding: 20px;
   text-align: center;
 }
 
@@ -119,24 +117,28 @@ SECTION 1 - BANNER
 SECTION 2 - FORMULARIO
 -------------------------------------------------------------------------------- */
 
-#consultas-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
+  #consultas-container {
+    display: flex;
     border: 1px solid black;
     width: 93vw;
+    gap: 50px;
     margin-top: 30px;
     margin-left: 3vw;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     background-color: var(--main-color1);
   } 
+
+#cc-left{
+  width: 45%;
+}
 
 #cc-left h3 {
   font-size: 3rem;
   font-family: var(--body-fonts-1);
   font-weight: 400;
   padding-left: 35px;
+  margin-top: -15px;
   }
   
 #cc-left p {
@@ -149,7 +151,6 @@ SECTION 2 - FORMULARIO
   #cc-right{
   font-family: var(--body-fonts-2);
   font-weight: 100;
-  padding-left: 50px;
   display: flex;
   flex-direction: column;
   }
@@ -160,6 +161,7 @@ SECTION 2 - FORMULARIO
   }
   
   h4 {
+    font-size: 1rem;
     font-family: var(--body-fonts-2);
     font-weight: 100;
   }
@@ -224,6 +226,10 @@ SECTION 2 - FORMULARIO
   font-family: var(--body-fonts-2);
   font-weight: 100;
   cursor: pointer; 
+  }
+
+  .formnegrita {
+    font-weight: 400;
   }
 
 /* --------------------------------------------------------------------------------
@@ -308,6 +314,7 @@ SECTION - FAQ
     grid-template-rows: auto;
     border: 1px solid black;
     width: 93vw;
+    gap: 10px;
     margin-top: 30px;
     margin-left: 3vw;
     background-color: var(--main-color5);
@@ -352,8 +359,8 @@ margin-top: 10px;
 }
 
 .faq-pregunta img{
-    margin-left: 25px;
-    display: inline-block;
+    margin-left: 10px;
+    /* display: inline-block; */
     width: 16px;
     height: 16px;
 }
@@ -383,7 +390,7 @@ footer {
   width: 93vw;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 3vw;
   margin-bottom: 20px;
   font-family: var(--body-fonts-2);
@@ -466,25 +473,85 @@ FUENTES
 
 /* Media queries */
 @media screen and (max-width: 700px){
-  
-  
-  #banner-contacto h1{
-    font-size: 650%;
+
+
+.menu-navegacion {
+  display: flex;
+}
+ 
+.menu-navegacion a {
+    font-size: 1rem;
+    display: flex;
+    align-items: center; 
+    margin: 0 5px 0px 0px;
+    text-align: center;
+    flex-wrap: wrap;
   }
-  .menu-navegacion a {
-    margin: 0 10px;
+  
+#banner-contacto h1{
+    font-size: 5rem;
   }
 
+#banner-contacto p{
+    font-size: 1.5rem;
+  }
+
+#consultas-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  } 
+
+#cc-left{
+  text-align: center;
+  width: 80%;
+}
+
+#cc-left h3 {
+  font-size: 2rem;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  }
+  
+#cc-left p {
+  font-size: 1.2em;
+  padding-left: 0px;
+  }
+
+#cc-right{
+    width: 80%;
+  }
+  
+h4 {
+  font-size: .90rem;
+}
+label {
+  font-size: .90rem;
+}
+
+.campo-form-2 input {
+font-size: .90rem;
+  }
+
+.campo-form-1 input[type="file"]  {
+    margin: 10px 0px 0px 0px;
+    }
+
+ #ubicacion-right {
+
+      padding:20px 20px 20px 0px;
+    }
 
 #ubicacion-right h3 {
   padding: 0px;
   font-size: 1.75rem;
   }
 
-  #ubicacion-right-info p{
+#ubicacion-right-info p{
     font-size: 1.2rem;
     }
-
 
 #faq {
     display: flex;
@@ -495,7 +562,6 @@ FUENTES
 
 #faq-left{
   text-align: center;
-  margin-bottom: 10px;
 }
 
 #faq-left h3{
@@ -519,7 +585,6 @@ FUENTES
   border: .7px solid black;
   margin-top: 15px;
 }
-
 
 footer {
   display: flex;
@@ -549,3 +614,9 @@ footer {
 }
 
   
+
+
+@media screen and (max-width: 400px){
+
+   
+}
