@@ -9,16 +9,20 @@
 document.getElementById('form-contacto').addEventListener('submit', function(event) {
     event.preventDefault(); 
     
-    var nombre = document.getElementById("nombre").value.trim(); 
-    
-    var resultadoDiv = document.getElementById("resultado"); 
+    let nombre = document.getElementById("nombre").value.trim(); 
+    let mail = document.getElementById("mail").value.trim();
+    let telefono = document.getElementById("tel").value.trim()
+    let resultadoDiv = document.getElementById("resultado"); 
     
     if (nombre === "") { 
         resultadoDiv.textContent = 'Por favor, ingrese un nombre.';
-        resultadoDiv.style.color = 'red';
+        return; 
+    } 
 
-    } else {
-        resultadoDiv.textContent = 'El nombre es válido.';
-        resultadoDiv.style.color = 'green';
-    }
+    if (mail === "") { 
+        resultadoDiv.textContent = 'Por favor, ingrese un mail.';
+        return; 
+    } 
+
+
 });

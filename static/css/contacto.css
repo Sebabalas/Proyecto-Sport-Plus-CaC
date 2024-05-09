@@ -232,6 +232,13 @@ SECTION 2 - FORMULARIO
     font-weight: 400;
   }
 
+#resultado {
+  margin-top: 10px;
+  font-family: var(--body-fonts-2);
+  font-weight: 100;
+  color: var(--main-color4);
+}
+
 /* --------------------------------------------------------------------------------
 SECTION - MAPA Y REDES 
 -------------------------------------------------------------------------------- */
