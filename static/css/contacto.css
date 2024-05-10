@@ -126,7 +126,9 @@ SECTION 2 - FORMULARIO
     margin-left: 3vw;
     padding-top: 20px;
     padding-bottom: 15px;
-    background-color: var(--main-color1);
+    /* background-color: var(--main-color1); */
+    background: linear-gradient(45deg, #3c5fde 0%, #273E91 95%);
+
   } 
 
 #cc-left{
@@ -251,7 +253,8 @@ SECTION - MAPA Y REDES
     grid-auto-rows: max-content;
     margin-top: 30px;
     margin-left: 3vw;
-    background-color: var(--main-color3);
+    /* background-color: var(--main-color3); */
+    background: linear-gradient(45deg, #cc8aff 0%, #744E91 95%);
 }
 
 #mapa {
@@ -325,6 +328,7 @@ SECTION - FAQ
     margin-top: 30px;
     margin-left: 3vw;
     background-color: var(--main-color5);
+    background: linear-gradient(45deg, #E67555 0%, #8C4A38 95%);
     padding-top: 20px;
     padding-bottom: 20px;
 }
