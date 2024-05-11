@@ -81,7 +81,7 @@ BODY
 SECTION 1 - BANNER
 -------------------------------------------------------------------------------- */
 
-.banner-quienessomos {
+#banner-quienessomos {
   width: 93vw;
   height: 86vh;
   background-image: url(../img/banners/bannerquienessomos.png);
@@ -91,28 +91,27 @@ SECTION 1 - BANNER
   position: relative;
   left: 3vw;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
 }
 
-.banner-quienessomos h1 {
+#banner-quienessomos h1 {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 8rem;
   text-shadow: 1px 1px 1px black;
   color: white;
   text-align: center;
-  margin-top: 150px;
 }
 
-.banner-quienessomos p{
+#banner-quienessomos p{
 font-family: "Oswald";
 font-weight: 400;
 font-size: 2rem;
 text-shadow: 1px 1px 1px black;
 color: var(--main-color4);
-display: flex;
-justify-content: center;
-padding: 20px;
 text-align: center;
 }
 
@@ -126,11 +125,12 @@ SECTION 2 - SERVICIOS
     flex-direction: column;
 }
 
-.container-s2 h1{
+.container-s2 h2{
   text-align: center;
   font-family: var(--body-fonts-1);
   font-size: 3rem;
   font-weight: 400;
+  margin: 15PX 0px 30px 0px;
 }
 
 .instructores{
@@ -145,7 +145,10 @@ SECTION 2 - SERVICIOS
     align-items: center;
     width: 300px;
     height: auto;
-    background-color: var(--main-color5);
+    /* background-color: var(--main-color5); */
+    /* background: linear-gradient(45deg, #E67555 0%, #853e2a 95%); */
+        /* background-color: var(--main-color3); */
+        background: linear-gradient(315deg, #cc8aff 0%, #744E91 95%);
     margin: 10px;
     overflow: hidden;
     border-radius: 10px;

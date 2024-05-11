@@ -80,7 +80,7 @@ BODY
 SECTION 1 - BANNER
 -------------------------------------------------------------------------------- */
 
-#banner-quienessomos {
+#banner-servicios {
   width: 93vw;
   height: 86vh;
   background-image: url(../img/banners/bannerservicios.png);
@@ -90,29 +90,28 @@ SECTION 1 - BANNER
   position: relative;
   left: 3vw;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
 }
 
-#banner-quienessomos h1 {
+#banner-servicios h1 {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 8rem;
   text-shadow: 1px 1px 1px black;
   color: white;
   text-align: center;
-  margin-top: 150px;
 }
 
-#banner-quienessomos p{
-font-family: "Oswald";
-font-weight: 400;
-font-size: 2rem;
-text-shadow: 1px 1px 1px black;
-color: var(--main-color4);
-display: flex;
-justify-content: center;
-padding: 20px;
-text-align: center;
+#banner-servicios p{
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px black;
+  color: var(--main-color4);
+  text-align: center;
 }
 
 
