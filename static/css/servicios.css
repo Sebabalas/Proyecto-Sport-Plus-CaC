@@ -165,7 +165,6 @@ SECTION 3 - PLANES Y PRECIOS
   text-align: center;
   background-color: var(--main-color5);
   background: linear-gradient(45deg, #E67555 0%, #853e2a 95%);
-
   width: 93vw;
   margin-top: 30px;
   position: relative;
@@ -215,7 +214,7 @@ SECTION 3 - PLANES Y PRECIOS
 
 .plan-descripcion {
   padding: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .plan-precio {
