@@ -40,7 +40,8 @@ header {
     z-index: 1000;
     width: 100vw;
     height: 10vh;
-    background-color: #ff4551;
+    /* background-color: #ff4551; */
+    background: linear-gradient(45deg, #ff4551 0%, #B33039 95%);
     position: fixed;
     top: 0px;
     left: 0px;
@@ -123,10 +124,11 @@ text-align: center;
     font-family: var(--body-fonts-1);
     font-size: 3rem;
     font-weight: 400;
-
+    margin: 15PX 0px 30px 0px;
   }
 .seccion-horarios{
-  background-color: var(--main-color3);
+    /* background-color: var(--main-color3); */
+    background: linear-gradient(45deg, #cc8aff 0%, #744E91 95%);
   width: 93vw;
   height: auto;
   padding-bottom: 20px;
@@ -163,9 +165,10 @@ SECTION 3 - PLANES Y PRECIOS
 .seccion-planes-y-precios {
   text-align: center;
   background-color: var(--main-color5);
+  background: linear-gradient(45deg, #E67555 0%, #853e2a 95%);
+
   width: 93vw;
-  margin-top: 6vh;
-  margin-bottom: 3vh;
+  margin-top: 30px;
   position: relative;
   left: 3vw;
   border: 1px solid black;
@@ -177,7 +180,7 @@ SECTION 3 - PLANES Y PRECIOS
   font-family: var(--body-fonts-1);
   font-size: 3rem;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin: 15PX 0px 30px 0px;
 
   }
 
@@ -277,11 +280,13 @@ SECTION 4 - CONSULTAS
   grid-template-rows: auto;
   border: 1px solid black;
   width: 93vw;
-  margin-top: 6vh;
+  margin-top: 30px;
   margin-left: 3vw;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: var(--main-color1);
+  /* background-color: var(--main-color1); */
+  background: linear-gradient(45deg, #3c5fde 0%, #273E91 95%);
+
 }
 
 #consultas-titulo {
@@ -355,6 +360,7 @@ font-weight: 100;
 }
 
 
+
 /*--------------------------------------------------------------------------------
 FOOTER
 -------------------------------------------------------------------------------- */
@@ -364,14 +370,14 @@ footer {
   width: 93vw;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 3vw;
   margin-bottom: 20px;
   font-family: var(--body-fonts-2);
   border: 1px solid black;
-  background-color: var(--main-color4);
-  /* box-shadow: 1px 1px 1px black; */
- 
+  /* background-color: var(--main-color4); */
+  background: linear-gradient(45deg, #FAB70C 0%, #CC950A 95%);
+
 }
 
 #footer-left {
@@ -430,7 +436,6 @@ footer {
   display: inline-block; 
   margin-right: 5px;
 }
-  
 
 /* --------------------------------------------------------------------------------
 CRÊDITOS

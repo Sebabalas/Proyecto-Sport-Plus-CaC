@@ -41,7 +41,8 @@ header {
     z-index: 1000;
     width: 100vw;
     height: 10vh;
-    background-color: #ff4551;
+    /* background-color: #ff4551; */
+    background: linear-gradient(45deg, #ff4551 0%, #B33039 95%);
     position: fixed;
     top: 0px;
     left: 0px;
@@ -208,18 +209,19 @@ SECTION 2 - SERVICIOS
 /* --------------------------------------------------------------------------------
 SECTION 3 - CONSULTAS 
 -------------------------------------------------------------------------------- */
-
 #consultas {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   border: 1px solid black;
   width: 93vw;
-  margin-top: 75px;
+  margin-top: 30px;
   margin-left: 3vw;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: var(--main-color1);
+  /* background-color: var(--main-color1); */
+  background: linear-gradient(45deg, #3c5fde 0%, #273E91 95%);
+
 }
 
 #consultas-titulo {
@@ -293,7 +295,6 @@ font-weight: 100;
 }
 
 
-
 /*--------------------------------------------------------------------------------
 FOOTER
 -------------------------------------------------------------------------------- */
@@ -303,7 +304,7 @@ footer {
   width: 93vw;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 3vw;
   margin-bottom: 20px;
   font-family: var(--body-fonts-2);

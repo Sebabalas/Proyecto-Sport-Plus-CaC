@@ -40,7 +40,8 @@ header {
     z-index: 1000;
     width: 100vw;
     height: 10vh;
-    background-color: #ff4551;
+    /* background-color: #ff4551; */
+    background: linear-gradient(45deg, #ff4551 0%, #B33039 95%);
     position: fixed;
     top: 0px;
     left: 0px;
@@ -328,7 +329,7 @@ SECTION - FAQ
     margin-top: 30px;
     margin-left: 3vw;
     background-color: var(--main-color5);
-    background: linear-gradient(45deg, #E67555 0%, #8C4A38 95%);
+    background: linear-gradient(45deg, #E67555 0%, #853e2a 95%);
     padding-top: 20px;
     padding-bottom: 20px;
 }
