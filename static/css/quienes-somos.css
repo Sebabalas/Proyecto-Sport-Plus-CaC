@@ -423,17 +423,123 @@ FUENTES
 /* ------------------------------------------------------ */
 /* Media Query para pantallas con un ancho máximo de 700px */
 
-@media screen and (max-width: 700px){
+@media only screen and (max-width: 700px){
 
+  .menu-navegacion a {
+    margin: 0 10px;
+    font-size: 1.3rem;
+  }
   .banner-quienessomos{
     height: auto;
   }
   
-  .banner-quienessomos h1{
-    font-size: 650%;
+  #banner-quienessomos h1{
+    font-size: 6rem;
   }
-  .menu-navegacion a {
-    margin: 0 10px;
+  #consultas {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 30px;
+    margin-top: 30px;
+    
   }
+  #consultas-titulo {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 8%;
+  } 
+  
+  #consultas-titulo h3{
+    font-size: 2.5rem;
+  }
+  
+  #consultas-left > p {
+    font-size: 1.6em;
+    margin-left: 8%;
+  }
+  #campo-nombre input {
+    width: 90%;
+    }
+    
+    #campo-mail input {
+    width: 90%;
+    }
+    
+    #campo-consulta textarea {
+    width: 90%;
+    }
+  
+
+    /* FOOTER */
+
+footer {
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  row-gap: 25px;
+  margin-left: 3vw;
+  margin-bottom: 20px;
+}
+
+#footer-left {
+  padding: 40px 15px 0px 30px;
+}
+
+#footer-left p {
+  font-weight: 100;
+}
+
+#footer-left input{
+  width: 92%;
+}
+
+
+#footer-right {
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+  font-size: .65em;
+}
+
+#footer-right-info p{
+display: inline;
+}
+}
+
+/* ------------------------------------------------------------- */
+/* Media Query par pantallas con un ancho máximo de 400px */
+/* ------------------------------------------------------------- */
+@media only screen and (max-width: 400px){
+
+.menu-navegacion{
+  margin-left: 1vw;
+}
+
+.menu-navegacion a{
+  font-size: 1em;
+  margin: 0px;
+}
+#logo{
+  height: 60px;
+  width: 100px
+}
+
+#banner{
+  width: 94%;
+  height: 86vh;
+}
+#banner-quienessomos h1{
+  font-size: 5rem;
+}
+
+  /* INSTRUCOTRES */
+
+  .container-s2 h2{
+    font-size: 1.8rem;
+  }
+
+  /* FOOTER */
+
+  #footer-right-info p{
+    display: block;
+    }
 
 }
