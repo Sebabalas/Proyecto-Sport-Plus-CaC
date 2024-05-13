@@ -123,7 +123,7 @@ text-align: center;
     font-family: var(--body-fonts-1);
     font-size: 3rem;
     font-weight: 400;
-    margin: 15PX 0px 30px 0px;
+    margin-bottom: 20px;
   }
 .seccion-horarios{
     /* background-color: var(--main-color3); */
@@ -136,10 +136,12 @@ text-align: center;
   position: relative;
   left: 3vw;
   border: 1px solid black;
+  overflow: hidden;
 
 }
 table {
     width: 80%;
+    max-width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
     background-color: var(--main-color2); /* Color de fondo rojo */
@@ -151,6 +153,7 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 10px;
+    word-wrap: break-word;
 }
 th {
     background-color: #f2f2f2;
@@ -218,7 +221,8 @@ SECTION 3 - PLANES Y PRECIOS
 }
 
 .plan-precio {
-  padding: 20px;
+  /*margin-top: 20px;*/
+  padding: 17px;
   border-radius: 0 0 5px 5px;
 }
 
@@ -466,77 +470,184 @@ MEDIA QUERYES - 700
 
 
 /* Media Query para pantallas con un ancho máximo de 700px */
-@media screen and (max-width: 700px) {
-  .menu-navegacion {
-    text-align: center;
-    padding: 0;
-  }
+@media screen and (max-width: 700px){
+
 
   .menu-navegacion a {
     margin: 0 10px;
+    font-size: 1.3rem;
   }
+  
+  #banner-servicios {
+      height: 65vh;
+    }
+  
+  #banner-servicios h1{
+      font-size: 5rem;
+    }
+  
+  #banner-servicios p{
+      font-size: 1.5rem;
+    }
+/* --------------------------------------------------------------------------------
+SECTION 2 - HORARIOS
+-------------------------------------------------------------------------------- */
+    table {
+      font-size: 0.9rem; /* Ajustar el tamaño de fuente para dispositivos medianos */
+      overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+      display: block; /* Cambiar a un tipo de visualización de bloque para permitir el desplazamiento horizontal */
+    }
+    th, td {
+      min-width: 100px; /* Establecer un ancho mínimo para las celdas */
+      white-space: nowrap; /* Evitar el salto de línea en el texto dentro de las celdas */
+    }
 
-  #banner-quienessomos h1 {
-    font-size: 650%;
-  }
+    .scroll-indicator {
+      text-align: center;
+      font-size: 1.7rem;
+      color: black;
+      margin-top: 10px;
+      display: block;
+      font-family: "Oswald";
+      font-weight: 400;
+    }
 
-  .seccion-horarios h2,
-  .seccion-planes-y-precios h2 {
-    font-size: 2.5rem;
-  }
+/* --------------------------------------------------------------------------------
+SECTION 4 - CONSULTAS 
+-------------------------------------------------------------------------------- */
 
-  #consultas-titulo {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  #consultas-left,
-  #consultas-right {
-    text-align: center;
-  }
-
-  #campo-nombre,
-  #campo-mail,
-  #campo-consulta,
-  #campo-enviar {
-    margin-top: 20px;
-  }
-
-  footer {
-    grid-template-columns: 100%;
-    text-align: center;
-  }
-
-  #footer-left {
-    padding: 20px;
-  }
-
-  #footer-left input {
+    #consultas {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      row-gap: 30px;
+      margin-top: 30px;
+      
+    }
+    
+    #consultas-titulo {
+      padding-top: 0px;
+      margin-top: 0px;
+      margin-left: 8%;
+    } 
+    
+    #consultas-titulo h3{
+      font-size: 2.5rem;
+    }
+    
+    #consultas-left > p {
+      font-size: 1.6em;
+      margin-left: 8%;
+    }
+    
+    #campo-nombre input {
     width: 90%;
-  }
+    }
+    
+    #campo-mail input {
+    width: 90%;
+    }
+    
+    #campo-consulta textarea {
+    width: 90%;
+    }
+    
+    
+/*--------------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------------- */
 
-  #footer-right {
-    padding: 20px;
-  }
+    
+    footer {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      row-gap: 25px;
+      margin-left: 3vw;
+      margin-bottom: 20px;
+    }
+    
+    #footer-left {
+      padding: 40px 15px 0px 30px;
+    }
+    
+    #footer-left p {
+      font-weight: 100;
+    }
+    
+    #footer-left input{
+      width: 92%;
+    }
+    
+    
+    #footer-right {
+      padding: 0px 0px 20px 0px;
+      text-align: center;
+      font-size: .65em;
+    }
+    
+    #footer-right-info p{
+    display: inline;
+    }
+  }      
 
-  #footer-right-info p {
-    margin: 5px 0;
+
+  /* MAX 400 */
+  /* ------------------------------------------------------------ */
+  
+  
+  @media screen and (max-width: 400px){
+  
+    .menu-navegacion{
+      margin-left: 1vw;
+    }
+  
+    .menu-navegacion a{
+      font-size: 1em;
+      margin: 0px;
+    }
+  
+    #banner-servicios {
+      height: 55vh;
+    }
+    
+  #banner-servicios h1{
+      font-size: 3rem;
+    }
+  
+  #banner-servicios p{
+      font-size: 1.1rem;
+    }
+  
+  #consultas-container {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 30px;
+    }
+
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
   }
+  
+  #footer-left {
+  padding: 20px 15px 0px 30px;
 }
 
-/* Media Query para pantallas con un ancho máximo de 400px */
-@media screen and (max-width: 400px) {
-  table {
-    overflow-x: auto;
-    display: block;
-    width: 100%;
-  }
+  #footer-right {
+  font-size: .65em;
+}
 
-  th, td {
-    min-width: 100px;
-    white-space: nowrap;
+  #footer-right-info p{
+  display: block;
   }
-}/* @font-face {
+  
+  }
+     
+/* @font-face {
   font-family: "cooper-hewitt-thin";
   src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Thin.otf);
 }
