@@ -646,6 +646,11 @@ FOOTER
   }
   
   }
+  @media screen and (min-width: 701px) {
+    .scroll-indicator {
+      display: none; /* Ocultar el mensaje en dispositivos más grandes */
+    }
+  }
      
 /* @font-face {
   font-family: "cooper-hewitt-thin";
