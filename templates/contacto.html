@@ -51,7 +51,7 @@
 
     <div id="cc-right">
        
-        <form id="form-contacto" name="Contacto" action="https://formspree.io/f/mzbnonyz" method="post">
+        <form id="form-contacto" name="Contacto" method="post">
            
             <div class="campo-form-1">
                 <div>
@@ -69,14 +69,14 @@
            
             <div class="campo-form-1">
                 <div>
-                <label class="formnegrita" for="tel">Teléfono </label>
+                <label class="formnegrita" for="tel">Teléfono (sin guiones ni +54 ni 0 al comienzo) </label>
                 </div>
                 <input type="text" name="tel" id="tel" >
             </div>
 
             <div class="campo-form-1"> <!-- RADIO BUTTON -->
 
-                <h4 class="formnegrita">Género</h4>
+                <h4 class="formnegrita" required>Género</h4>
 
                 <input type="radio" name="genero" id="mujer" value="Mujer" >
                 <label for="mujer">Mujer</label>
@@ -93,7 +93,7 @@
 
                 <div>
                     
-                    <h4 class="formnegrita">Servicios</h4>
+                    <h4 class="formnegrita" required>Servicios</h4>
 
                     <input type="checkbox" name="servicios" id="boxeo" value="boxeo">
                     <label for="boxeo">Boxeo</label>
@@ -119,7 +119,7 @@
                 <h4 class="formnegrita">Plan</h4>
 
                 <input list="lista-plan" id="plan" name="plan">
-                <datalist id="lista-plan">
+                <datalist id="lista-plan" required>
                     <option value="Diamante">Diamante</option>
                     <option value="Oro">Oro</option>
                     <option value="Plata">Plata</option>
@@ -136,9 +136,9 @@
 
             <div class="campo-form-1">
                 <div>
-                    <label class="formnegrita" for="aptofisico">Apto físico</label>
+                    <label class="formnegrita" for="aptofisico" >Apto físico</label>
                 </div>
-                <input type="file" name="aptofisico" id="aptofisico">
+                <input type="file" name="aptofisico" id="aptofisico" required>
             </div>
 
 
