@@ -5,7 +5,6 @@
 //    campos sean obligatorios.
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^(11|[2-9]\d{1,4})\d{6,8}$/ // 7 a 14 numeros.
 }
 
