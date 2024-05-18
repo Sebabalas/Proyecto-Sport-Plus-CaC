@@ -41,7 +41,6 @@ header {
     z-index: 1000;
     width: 100vw;
     height: 10vh;
-    /* background-color: #ff4551; */
     background: linear-gradient(45deg, #ff4551 0%, #B33039 95%);
     position: fixed;
     top: 0px;

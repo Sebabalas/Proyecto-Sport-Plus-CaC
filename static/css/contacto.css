@@ -46,10 +46,11 @@ header {
     top: 0px;
     left: 0px;
     justify-content: space-between;
+    align-items: center;
     padding-left: 3vw;  
 }
 .menu-navegacion{
-  display: flex;
+  padding-right: 7vw;
 }
 
 .menu-navegacion a {
@@ -491,18 +492,12 @@ FUENTES
 /* ------------------------------------------------------------ */
 
 
-@media screen and (max-width: 700px){
+@media only screen and (max-width: 700px){
 
-
-.menu-navegacion a {
-    font-size: 1rem;
-    display: flex;
-    align-items: center; 
-    margin: 0 5px 0px 0px;
-    text-align: center;
-    flex-wrap: wrap;
+  .menu-navegacion a {
+    margin: 0 10px;
+    font-size: 1.3rem;
   }
-  
 
 #banner-contacto {
     height: 65vh;
@@ -637,17 +632,16 @@ footer {
 /* ------------------------------------------------------------ */
 
 
-@media screen and (max-width: 400px){
+@media only screen and (max-width: 400px){
 
-  .menu-navegacion a {
-    font-size: .7rem;
-    display: flex;
-    align-items: center; 
-    margin: 0 5px 0px 0px;
-    text-align: center;
-    flex-wrap: wrap;
+  .menu-navegacion{
+    margin-left: 1vw;
   }
 
+  .menu-navegacion a{
+    font-size: 1em;
+    margin: 0px;
+  }
   #banner-contacto {
     height: 55vh;
   }

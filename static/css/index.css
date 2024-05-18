@@ -39,7 +39,6 @@ header {
     z-index: 1000;
     width: 100vw;
     height: 10vh;
-    /* background-color: #ff4551; */
     background: linear-gradient(45deg, #ff4551 0%, #B33039 95%);
     position: fixed;
     top: 0px;
@@ -513,19 +512,6 @@ FUENTES
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: "cooper-hewitt-thin";
-  src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Thin.otf);
-}
-
-@font-face {
-  font-family: "cooper-hewitt-medium";
-  src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Medium.otf);
-} */
-
-
-
-
 /* --------------------------------------------------------------------------------
 MEDIA QUERYES - 700
 -------------------------------------------------------------------------------- */
@@ -650,7 +636,6 @@ display: inline;
 /* --------------------------------------------------------------------------------
 MEDIA QUERYES - 400
 -------------------------------------------------------------------------------- */
-
 
 @media only screen and (max-width: 400px){
   .menu-navegacion{
