@@ -1,18 +1,12 @@
-<<<<<<< HEAD
-=======
 /* --------------------------------------------------------------------------------
 GENERAL
 -------------------------------------------------------------------------------- */
 
->>>>>>> index2
 *{
     padding: 0px;
     margin: 0px;;
 }
 
-<<<<<<< HEAD
-
-=======
 :root {
   --main-color1: #3C60DF;
   --main-color2: #FF4550;
@@ -39,42 +33,19 @@ body{
 /* --------------------------------------------------------------------------------
 HEADER
 -------------------------------------------------------------------------------- */
->>>>>>> index2
 
 header {
     display: flex;
     z-index: 1000;
     width: 100vw;
     height: 10vh;
-<<<<<<< HEAD
-    background-color: #ff4550;
-=======
     /* background-color: #ff4551; */
     background: linear-gradient(45deg, #ff4551 0%, #B33039 95%);
->>>>>>> index2
     position: fixed;
     top: 0px;
     left: 0px;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-    padding-left: 3vw;
-    
-}
-.menu-navegacion{
-  padding-right: 7vw;
-}
-.menu-navegacion a {
-  color: white;
-  text-decoration: none;
-  text-shadow: 1px 1px 2px black;
-  margin: 0 10px;
-  font-size: 2em;
-}
-.menu-navegacion a:hover {
-  color: #FBB90D;
-}
-=======
     padding-left: 3vw;   
     border-bottom: .5px solid black;
 }
@@ -97,36 +68,11 @@ header {
   color: var(--main-color4);
 }
 
->>>>>>> index2
 #logo{
   height: 80px;
   width: 120px;
 }
 
-<<<<<<< HEAD
-#banner {
-    margin-top: 12vh;
-    margin-bottom: 3vh;
-}
-#banner img {
-    width: 100vw;
-    height: 88vh;
-}
-
-#container-s2{
-    
-    display: grid;
-    grid-template-columns: 28% 28% 28%;
-    grid-template-rows: 400px 400px;
-    row-gap: 5%;
-    column-gap: 5%;
-    justify-content: center;
-    align-items: center;
-    
-}
-.imagenes {
-  position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a este contenedor */
-=======
 /* --------------------------------------------------------------------------------
 BODY
 -------------------------------------------------------------------------------- */
@@ -191,78 +137,10 @@ SECTION 2 - SERVICIOS
 
 .imagenes {
   position: relative;
->>>>>>> index2
   width: 100%;
   height: 400px;
 }
 
-<<<<<<< HEAD
-.imagen-actividades{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.texto-imagenes {
-  position: absolute; /* Establece la posición absoluta */
-  top: 50%; /* Posiciona el texto en la mitad superior de la imagen */
-  left: 50%; /* Posiciona el texto en la mitad izquierda de la imagen */
-  transform: translate(-50%, -50%); /* Centra el texto correctamente */
-  background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para mejor legibilidad */
-  padding: 10px; /* Añade espacio alrededor del texto */
-  font-weight: bold; /* Hace que el texto sea más visible */
-  text-align: center;
-}
-
-
-/* .--------- */
-
-/*  */
-
-#item2 {
-background-image: url(../img/actividades/funcional/funcional1.jpg);
-background-size: cover;
-width: 100%;
-height: 400px;
-   }
-
-#item3 {
-background-image: url(../img/actividades/pilates/pilates1.jpg);
-background-size: cover;
-width: 100%;
-height: 400px;
-   }
-
- #item4 {
-background-image: url(../img/actividades/spining/spining1.webp);
-background-size: cover;
-width: 100%;
-height: 400px;
-   }
-
-#item5 {
-background-image: url(../img/actividades/yoga/yoga1.jpg);
-background-size: cover;
-width: 100%;
-height: 400px;
-   }
-
- #item6 {
-background-image: url(../img/actividades/zumba/zumba1.webp);
-background-size: cover;
-width: 100%;
-height: 400px;
-   }
-
-@media screen {
-    
-}
-
-
-=======
 .texto-imagenes {
   position: absolute;
   top: 50%;
@@ -854,4 +732,3 @@ MEDIA QUERYES - 400
 } */
 
 }
->>>>>>> index2
