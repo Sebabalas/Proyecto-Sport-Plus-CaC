@@ -7,8 +7,6 @@ GENERAL
     margin: 0px;;
 }
 
-
-
 :root {
   --main-color1: #3C60DF;
   --main-color2: #FF4550;
@@ -20,35 +18,28 @@ GENERAL
   --body-fonts-2: "Cooper-Hewitt",  sans-serif;
 }
 
-/* --main-color1: rgba(60, 96, 223, 1);
---main-color2: rgba(255, 69, 80, 1);
---main-color3: rgba(204, 137, 255, 1);
---main-color4: rgba(251, 185, 13, 1);
---main-color5: rgba(230, 117, 85, 1);
---main-color6: rgba(207, 203, 136, 1); */
-
 body{
   background-color: white;
 }
-
 
 /* --------------------------------------------------------------------------------
 HEADER
 -------------------------------------------------------------------------------- */
 
 header {
-    display: flex;
-    z-index: 1000;
-    width: 100vw;
-    height: 10vh;
-    background: linear-gradient(45deg, #ff4551 0%, #B33039 95%);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 3vw;  
+  display: flex;
+  z-index: 1000;
+  width: 100vw;
+  height: 10vh;
+  background: linear-gradient(45deg, #ff4551 0%, #B33039 95%);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3vw;  
 }
+
 .menu-navegacion{
   padding-right: 7vw;
 }
@@ -106,12 +97,12 @@ SECTION 1 - BANNER
 }
 
 #banner-quienessomos p{
-font-family: "Oswald";
-font-weight: 400;
-font-size: 2rem;
-text-shadow: 1px 1px 1px black;
-color: var(--main-color4);
-text-align: center;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px black;
+  color: var(--main-color4);
+  text-align: center;
 }
 
 
@@ -120,8 +111,8 @@ SECTION 2 - SERVICIOS
 -------------------------------------------------------------------------------- */
 
 .container-s2{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-s2 h2{
@@ -133,56 +124,53 @@ SECTION 2 - SERVICIOS
 }
 
 .instructores{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .instructor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    height: auto;
-    /* background-color: var(--main-color5); */
-    /* background: linear-gradient(45deg, #E67555 0%, #853e2a 95%); */
-        /* background-color: var(--main-color3); */
-        background: linear-gradient(315deg, #cc8aff 0%, #744E91 95%);
-    margin: 10px;
-    overflow: hidden;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  background: linear-gradient(315deg, #cc8aff 0%, #744E91 95%);
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .instructor img{
-    max-width: 100%; /* La imagen nunca será más ancha que el contenedor */
-    max-height: 80%; /* La imagen nunca será más alta que el contenedor */
-    width: auto; /* Ancho automático para mantener la proporción */
-    height: auto; /* Alto automático para mantener la proporción */
-    display: block; /*Para evitar espacios en blanco debajo de la imagen*/
-    box-shadow: 2px -1px 5px rgb(56, 56, 56);
-    transition: transform 0.3s; /* Animación de la propiedad transform */
+  max-width: 100%; /* La imagen nunca será más ancha que el contenedor */
+  max-height: 80%; /* La imagen nunca será más alta que el contenedor */
+  width: auto; /* Ancho automático para mantener la proporción */
+  height: auto; /* Alto automático para mantener la proporción */
+  display: block; /*Para evitar espacios en blanco debajo de la imagen*/
+  box-shadow: 2px -1px 5px rgb(56, 56, 56);
+  transition: transform 0.3s; /* Animación de la propiedad transform */
 }
 
 .instructor img:hover{
-    transform: scale(1.1); /* Hace un zoom del 10% cuando se pasa el cursor por encima */
+  transform: scale(1.1); /* Hace un zoom del 10% cuando se pasa el cursor por encima */
 }
 
 .instructor p{
-    text-align: center;
-    padding: 10px;
-    font-family: "cooper-hewitt-light";
-  }
+  text-align: center;
+  padding: 10px;
+  font-family: "cooper-hewitt-light";
+}
 
 .nombre-instructor{
   font-weight: bold;
 }
 
 .instructor h4{
-    text-align: center;
-    padding: 5px;
-    font-size: 1.5em;
-    font-family: var(--body-fonts-1);
-    font-weight: 300;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.5em;
+  font-family: var(--body-fonts-1);
+  font-weight: 300;
 }
 
 .imagenes {
@@ -207,7 +195,6 @@ SECTION 2 - SERVICIOS
 }
 
 
-
 /* --------------------------------------------------------------------------------
 SECTION 3 - CONSULTAS 
 -------------------------------------------------------------------------------- */
@@ -221,81 +208,75 @@ SECTION 3 - CONSULTAS
   margin-left: 3vw;
   padding-top: 25px;
   padding-bottom: 25px;
-  /* background-color: var(--main-color1); */
   background: linear-gradient(45deg, #3c5fde 0%, #273E91 95%);
-
 }
 
 #consultas-titulo {
-width: 100%;
-padding-top: 20px;
-margin-top: 70px;
-margin-left: 12%;
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 70px;
+  margin-left: 12%;
 } 
 
 #consultas-titulo h3{
-text-align: left;
-font-size: 3rem;
-font-family: var(--body-fonts-1);
-font-weight: 400;
+  text-align: left;
+  font-size: 3rem;
+  font-family: var(--body-fonts-1);
+  font-weight: 400;
 }
 
 #consultas-left > p {
-font-family: var(--body-fonts-2);
-font-size: 1.5em;
-font-weight: 100;
-margin-left: 12%;
-
+  font-family: var(--body-fonts-2);
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-left: 12%;
 }
 
 
 #consultas-right{
-font-family: var(--body-fonts-2);
-font-weight: 100;
-padding-left: 50px;
+  font-family: var(--body-fonts-2);
+  font-weight: 100;
+  padding-left: 50px;
 }
 
 #campo-mail, #campo-consulta, #campo-enviar {
-margin-top: 10px;
-
+  margin-top: 10px;
 }
 
 #campo-nombre input {
-border: 1px solid red;
-height: 30px;
-width: 70%;
-margin-top: 10px;
+  border: 1px solid red;
+  height: 30px;
+  width: 70%;
+  margin-top: 10px;
 }
 
 #campo-mail input {
-border: 1px solid red;
-height: 30px;
-width: 70%;
-margin-top: 10px;
-
+  border: 1px solid red;
+  height: 30px;
+  width: 70%;
+  margin-top: 10px;
 }
 
 #campo-consulta textarea {
-border: 1px solid red;
-height: 100px;
-width: 70%;
-margin-top: 10px;
+  border: 1px solid red;
+  height: 100px;
+  width: 70%;
+  margin-top: 10px;
 }
 
 #campo-enviar input {
-background-color: #FF4550;
-color: white;
-border: none;
-border-radius: 3px;
-width: 50px;
-padding: 3px;
+  background-color: #FF4550;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 50px;
+  padding: 3px;
 }
 
 #campo-enviar input[type="submit"] {
-font-family: var(--body-fonts-2);
-font-weight: 100;
+  font-family: var(--body-fonts-2);
+  font-weight: 100;
 }
-
 
 /*--------------------------------------------------------------------------------
 FOOTER
@@ -312,8 +293,6 @@ footer {
   font-family: var(--body-fonts-2);
   border: 1px solid black;
   background-color: var(--main-color4);
-  /* box-shadow: 1px 1px 1px black; */
- 
 }
 
 #footer-left {
@@ -386,8 +365,6 @@ CRÊDITOS
     margin-bottom: 10px;
   }
   
-
-
 /* --------------------------------------------------------------------------------
 FUENTES
 -------------------------------------------------------------------------------- */
@@ -417,59 +394,60 @@ FUENTES
   font-weight: 400;
 }
 
-/* ----------------------------------------------------- */
-
-/* ------------------------------------------------------ */
-/* Media Query para pantallas con un ancho máximo de 700px */
+/* MAX 700 */
+/* ------------------------------------------------------------ */
 
 @media only screen and (max-width: 700px){
 
-  .menu-navegacion a {
-    margin: 0 10px;
-    font-size: 1.3rem;
-  }
-  .banner-quienessomos{
-    height: auto;
-  }
-  
-  #banner-quienessomos h1{
-    font-size: 6rem;
-  }
-  #consultas {
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    row-gap: 30px;
-    margin-top: 30px;
-    
-  }
-  #consultas-titulo {
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-left: 8%;
-  } 
-  
-  #consultas-titulo h3{
-    font-size: 2.5rem;
-  }
-  
-  #consultas-left > p {
-    font-size: 1.6em;
-    margin-left: 8%;
-  }
-  #campo-nombre input {
-    width: 90%;
-    }
-    
-    #campo-mail input {
-    width: 90%;
-    }
-    
-    #campo-consulta textarea {
-    width: 90%;
-    }
-  
+.menu-navegacion a {
+  margin: 0 10px;
+  font-size: 1.3rem;
+}
 
-    /* FOOTER */
+.banner-quienessomos{
+  height: auto;
+}
+
+#banner-quienessomos h1{
+  font-size: 6rem;
+}
+
+#consultas {
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  row-gap: 30px;
+  margin-top: 30px;
+}
+
+#consultas-titulo {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 8%;
+} 
+
+#consultas-titulo h3{
+  font-size: 2.5rem;
+}
+
+#consultas-left > p {
+  font-size: 1.6em;
+  margin-left: 8%;
+}
+
+#campo-nombre input {
+  width: 90%;
+}
+
+#campo-mail input {
+  width: 90%;
+}
+
+#campo-consulta textarea {
+  width: 90%;
+}
+
+
+/*-------- FOOTER --------------------*/
 
 footer {
   grid-template-columns: 100%;
@@ -491,7 +469,6 @@ footer {
   width: 92%;
 }
 
-
 #footer-right {
   padding: 0px 0px 20px 0px;
   text-align: center;
@@ -499,13 +476,13 @@ footer {
 }
 
 #footer-right-info p{
-display: inline;
+  display: inline;
 }
 }
 
-/* ------------------------------------------------------------- */
-/* Media Query par pantallas con un ancho máximo de 400px */
-/* ------------------------------------------------------------- */
+/* MAX 400 */
+/* ------------------------------------------------------------ */
+
 @media only screen and (max-width: 400px){
 
 .menu-navegacion{
@@ -516,6 +493,7 @@ display: inline;
   font-size: 1em;
   margin: 0px;
 }
+
 #logo{
   height: 60px;
   width: 100px
@@ -529,16 +507,16 @@ display: inline;
   font-size: 5rem;
 }
 
-  /* INSTRUCOTRES */
+/* INSTRUCOTRES */
 
-  .container-s2 h2{
-    font-size: 1.8rem;
-  }
+.container-s2 h2{
+  font-size: 1.8rem;
+}
 
-  /* FOOTER */
+/* FOOTER */
 
-  #footer-right-info p{
-    display: block;
-    }
+#footer-right-info p{
+  display: block;
+}
 
 }

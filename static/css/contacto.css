@@ -373,7 +373,6 @@ margin-top: 10px;
 
 .faq-pregunta img{
     margin-left: 10px;
-    /* display: inline-block; */
     width: 16px;
     height: 16px;
 }
@@ -472,15 +471,6 @@ FUENTES
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: "cooper-hewitt-thin";
-  src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Thin.otf);
-}
-
-@font-face {
-  font-family: "cooper-hewitt-medium";
-  src: url(../../assets/fonts/cooper-hewitt/CooperHewitt-Medium.otf);
-} */
 
 /* ------------------------------------------------------------ */
 /* MEDIA QUERIES */
@@ -551,28 +541,27 @@ font-size: .90rem;
   }
 
 .campo-form-1 input[type="file"]  {
-    margin: 10px 0px 0px 0px;
-    }
+  margin: 10px 0px 0px 0px;
+}
 
  #ubicacion-right {
-
-      padding:20px 20px 20px 0px;
-    }
+  padding:20px 20px 20px 0px;
+}
 
 #ubicacion-right h3 {
   padding: 0px;
   font-size: 1.75rem;
-  }
+}
 
 #ubicacion-right-info p{
-    font-size: 1.2rem;
-    }
+  font-size: 1.2rem;
+}
 
 #faq {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #faq-left{
@@ -588,12 +577,12 @@ font-size: .90rem;
   }
 
 .faq-pregunta {
-    font-size: 1.1rem;
-    margin-top: 10px;
-  }
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
 
 .faq-respuesta {
-    font-size: .90rem;
+  font-size: .90rem;
 }
 
 #faq-right hr {
@@ -634,32 +623,32 @@ footer {
 
 @media only screen and (max-width: 400px){
 
-  .menu-navegacion{
-    margin-left: 1vw;
-  }
+.menu-navegacion{
+  margin-left: 1vw;
+}
 
-  .menu-navegacion a{
-    font-size: 1em;
-    margin: 0px;
-  }
-  #banner-contacto {
-    height: 55vh;
-  }
+.menu-navegacion a{
+  font-size: 1em;
+  margin: 0px;
+}
+#banner-contacto {
+  height: 55vh;
+}
   
 #banner-contacto h1{
-    font-size: 3rem;
-  }
+  font-size: 3rem;
+}
 
 #banner-contacto p{
-    font-size: 1.1rem;
-  }
+  font-size: 1.1rem;
+}
 
 #consultas-container {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-  } 
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+} 
 
 #cc-left{
   text-align: center;
@@ -671,12 +660,12 @@ footer {
   margin-top: 0px;
   margin-bottom: 10px;
   padding-left: 0px;
-  }
+}
   
 #cc-left p {
   font-size: .8em;
   padding-left: 0px;
-  }
+}
 
 #cc-right{
     width: 80%;
@@ -691,36 +680,35 @@ label {
 
 .campo-form-2 input {
 font-size: .70rem;
-  }
+}
 
 .campo-form-1 input[type="file"]  {
-    margin: 10px 0px 0px 0px;
-    }
+  margin: 10px 0px 0px 0px;
+}
 
- #ubicacion-right {
-      padding:20px 20px 20px 0px;
-    }
+#ubicacion-right {
+  padding:20px 20px 20px 0px;
+}
 
 #ubicacion-right h3 {
   padding: 0px;
   font-size: 1.5rem;
-  }
+}
 
 #ubicacion-right-info p{
-    font-size: .9rem;
-    }
+  font-size: .9rem;
+}
 
-    #ubicacion-right-redes img {
-      width: 30px;
-      height: 30px;
-    }
-    
+#ubicacion-right-redes img {
+  width: 30px;
+  height: 30px;
+}
 
 #faq {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #faq-left{
@@ -733,15 +721,15 @@ font-size: .70rem;
 }
 #faq-right {
   width: 80%;
-  }
+}
 
 .faq-pregunta {
-    font-size: .8rem;
-    margin-top: 10px;
-  }
+  font-size: .8rem;
+  margin-top: 10px;
+}
 
 .faq-respuesta {
-    font-size: .70rem;
+  font-size: .70rem;
 }
 
 #faq-right hr {
