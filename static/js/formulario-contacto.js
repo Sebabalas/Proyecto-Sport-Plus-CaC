@@ -38,23 +38,23 @@ document.getElementById('form-contacto').addEventListener('submit', function(eve
     
     if (nombre === ""|| mail === "" || telefono === "") { 
         resultadoDiv.textContent = 'Los campos no pueden estar vacios, por favor rellénelos.';
-        resultadoDiv.style.color = 'red';
+        resultadoDiv.style.color = 'yellow';
         return; 
     } 
     if(!expresiones.nombre.test(nombre)){
         resultadoDiv.textContent = 'Por favor, ingrese un nombre válido.';
-        resultadoDiv.style.color = 'red';
+        resultadoDiv.style.color = 'yellow';
         return; 
     }
     if(!expresiones.telefono.test(telefono)){
         resultadoDiv.textContent = 'Por favor, ingrese un número válido. Recuerde no incluir +54 ni 0 al comienzo';
-        resultadoDiv.style.color = 'red';
+        resultadoDiv.style.color = 'yellow';
         return;
     }
     // Validar la cantidad de checkboxes seleccionados
     if (checkboxesSeleccionados.length > limiteCheckbox) {
         resultadoDiv.textContent = 'Para el plan '+planSeleccionado.charAt(0).toUpperCase() + planSeleccionado.slice(1)+' , solo puede seleccionar '+ limiteCheckbox +' opciones.';
-        resultadoDiv.style.color = 'red';
+        resultadoDiv.style.color = 'yellow';
         return;
     }
     alert('Muchas gracias por inscribirse a Sport+! Lo/a esperamos!');

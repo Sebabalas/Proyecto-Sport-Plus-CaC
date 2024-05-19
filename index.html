@@ -29,6 +29,7 @@
 <main>
 
 <section id="banner">
+    <h2 class="oculto">Sport+</h2>
     <div id="naming">
         <img src="static/img/Logos/s3.png" alt="logo">
     </div>
@@ -42,6 +43,7 @@
 </div>
 
 <section id="container-s2">
+    <h2 class="oculto">Servicios</h2>
     <a href="templates/servicios.html">   
     <div class="imagenes" id="item1">
         <div class="texto-imagenes">
@@ -116,7 +118,7 @@
 
         <div id="consultas-right">
            
-            <form name="formularioconsultas"  method="post">
+            <form name="formularioconsultas" id="formularioconsultas" method="post">
                
                 <div id="campo-nombre">
                     <div>
@@ -161,9 +163,9 @@
         Suscribite para recibir nuestras novedades
         </p>
     
-        <form name="newsletter" action="https://formspree.io/f/xayrvrlg" method="post"> 
+        <form name="newsletter" id="newsletter" action="https://formspree.io/f/xayrvrlg" method="post"> 
         <div>
-         <input type="email" name="correo" id="correo" placeholder="Escribí tu correo acá"> 
+         <input type="email" name="correo" id="correo" placeholder="Escribí tu correo acá" required> 
          </div>
 
          <div id="newsletter-enviar">
@@ -188,6 +190,7 @@
 <p>© 2024 Fullstack Python Codo a Codo - Diseño y desarrollo: Sebastián - Lucas - Alejandro</p>
 </div>
 
-<script src="/static/js/consulta-y-newsletter.js"></script>
+<script src="/static/js/consulta.js"></script>
+<script src="/static/js/newsletter.js"></script>
 </body>
 </html>
