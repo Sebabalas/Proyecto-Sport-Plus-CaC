@@ -16,9 +16,4 @@ document.getElementById('formularioconsultas').addEventListener('submit', functi
     alert("Muchas gracias por mandarnos tu consulta, te responderemos lo más rápido posible!");
     window.location.reload(); 
 })
-
-document.getElementById('newsletter').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert("Muchas gracias por suscribirte, ahora vas a enterarte de todas nuestras novedades!")
-    window.location.reload(); 
-}) 
+ 
