@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(100deg, #efcc74 0%, #CC950A 70%);
+}
+
+#nuevo {
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0px 20px;
+    margin: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+    transition: background-color 0.3s;
+}
+
+#nuevo:hover {
+    background-color: #45a049;
+}
+
+.accion div {
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0px 20px;
+    margin: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+    transition: background-color 0.3s;
+}
+
+.accion div#modif {
+    background-color: yellow;
+    color: black;
+}
+
+.accion div#del {
+    background-color: red;
+}
+
+#container_clientes {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+#table_clientes {
+    width: 70vw;
+    border: .25px solid black;
+    border-collapse: collapse;
+}
+
+.head_clientes {
+    background-color: black;
+    color: white;
+}
+
+.head_clientes th, .row_clientes td {
+    border: .25px solid red;
+    text-align: left;
+    width: 11%;
+    padding: 10px; 
+}
+
+.row_clientes td {
+    border: .25px solid green;
+}
+
+tr img {
+    width: 100px;
+}
+
+.accion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

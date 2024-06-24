@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="../../static/css/tabla_clientes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/iconos/s3favicon.ico" type="image/x-icon">
+
+    <title>Admin - Gestión de clientes</title>
+</head>
+<body>
+    <section id="container_clientes">
+        <div>
+            <h1>REGISTRO DE CLIENTES</h1>
+        </div>
+       
+        <div id="nuevo">
+            <p>+ nuevo cliente</p>
+        </div>
+
+        <div>
+            <table id="table_clientes"> 
+                <tr class="head_clientes">
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Fecha de alta</th>
+                    <th>Plan</th>
+                    <th>Apto físico</th>
+                    <th>Foto</th>
+                    <th>Acción</th>
+                </tr>
+                <tr class="row_clientes">
+                    <td>1</td>
+                    <td>Alejandra</td>
+                    <td>Pisera</td>
+                    <td>38</td>
+                    <td>2000-1-1</td>
+                    <td>Plan oro</td>
+                    <td>Sí</td>
+                    <td><img src="../../static/img/instructores/instructor1.jpg" alt="Pisera"></td>
+                    <td class="accion">
+                        <div id="modif">Modificar</div>
+                        <div id="del">Borrar</div>
+                    </td>
+                </tr>
+                <tr class="row_clientes">
+                    <td>2</td>
+                    <td>Julián</td>
+                    <td>Mónaco</td>
+                    <td>36</td>
+                    <td>2003-11-2</td>
+                    <td>Plan diamante</td>
+                    <td>No</td>
+                    <td><img src="../../static/img/instructores/instructor2.jpg" alt="Mónaco"></td>
+                    <td class="accion">
+                        <div id="modif">Modificar</div>
+                        <div id="del">Borrar</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
