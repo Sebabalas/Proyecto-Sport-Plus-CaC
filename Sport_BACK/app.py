@@ -20,11 +20,11 @@ class Cliente(db.Model):  # La clase Cliente hereda de db.Model
     nombre = db.Column(db.String(50), nullable=False)
     mail = db.Column(db.String(100), nullable=False)
     tel = db.Column(db.String(15), nullable=False)
-    genero = db.Column(db.String, nullable=False)
+    genero = db.Column(db.String(10), nullable=False)
     servicios = db.Column(db.String(400))
     plan = db.Column(db.Enum('Plan bronce', 'Plan plata', 'Plan oro', 'Plan diamante'), nullable=False)
     consulta = db.Column(db.String(400))
-    aptofisico = db.Column(db.String(400))
+    aptofisico = db.Column(db.String(10), nullable=False)
 
     def __init__(self, nombre, mail, tel, genero, servicios, plan, consulta, aptofisico):  # Crea el constructor de la clase
         self.nombre = nombre

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,71 +15,107 @@
 
     <title>Admin - Consultas de clientes</title>
 </head>
+
 <body>
 
-    
-    <section id="container_login">
+    <main>
 
-        <div>
-            <a href="../contacto.html"><img src="../../static/img/Logos/s3favicon.png" alt="logoinstitucional"></a>
-        </div>
+        <section id="container_login">
 
-        <h3>ACCESO ADMINISTRADOR</h3>
-        <form action="/login" method="post">
-           
-            <label for="username">Usuario</label>
-            <input type="text" id="username" name="username" required>
+            <div>
+                <a href="../contacto.html"><img src="../../static/img/Logos/s3favicon.png" alt="logoinstitucional"></a>
+            </div>
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" required>
+            <h3>ACCESO ADMINISTRADOR</h3>
+            <form action="/login" method="post">
 
-            <button type="submit">Ingresar</button>
-        </form>
-    </section>
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
 
-    <section id="container_consultasclientes">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
 
-       <div>
-            <a href="../contacto.html"><img src="../../static/img/Logos/s3favicon.png" alt="logoinstitucional"></a>
-        </div>
+                <button type="submit">Ingresar</button>
+            </form>
+        </section>
 
-        <div>
-            <h3>CONSULTAS DE CLIENTES</h3>
-        </div>
+        <section id="container_consultasclientes">
 
-        <div>
-            <table id="table_clientes"> 
-                <tr class="head_clientes">
-                    <th>ID</th>
-                    <th>Nombre y apellido</th>
-                    <th>Email</th>
-                    <th>Teléfono</th>
-                    <th>Género</th>
-                    <th>Servicios</th>
-                    <th>Plan</th>
-                    <th>Observaciones</th>
-                    <th>Apto físico</th>
-                    <th>Acciones</th>
-                </tr>
-                <tr class="row_clientes">
-                    <td>1</td>
-                    <td>Daniel Lopes</td>
-                    <td>daniel.lopes@gmail.com</td>
-                    <td>11-5622-2388</td>
-                    <td>Hombre</td>
-                    <td>Zumba</td>
-                    <td>Oro</td>
-                    <td>Quisiera saber el costo del plan oro. ¿Tienen pileta?</td>
-                    <td>Archivo adjunto</td>
-                    <td class="accion">
-                        <div id="modif">Modif.</div>
-                        <div id="del">Borrar</div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
+            <div>
+                <a href="../contacto.html"><img src="../../static/img/Logos/s3favicon.png" alt="logoinstitucional"></a>
+            </div>
 
-<script src="../../static/js/login_clientes.js"></script>
+            <div>
+                <h3>CONSULTAS DE CLIENTES</h3>
+            </div>
+            <section class="container">
+                <div id="app">
+
+                    <!-- Botón Nuevo -->
+                    <a class="nuevo" href="templates/ingresar_producto.html">Nuevo</a>
+
+                    <section v-if="error">Lo sentimos se produjo un error</section>
+                    <section v-else>
+                        <section v-if="cargando">
+                            <p>Cargando .....</p>
+
+                        </section>
+                        <div>
+                            <section v-else>
+                                <table id="table_clientes">
+                                    <thead>
+                                        <tr class="head_clientes">
+                                            <th>ID</th>
+                                            <th>Nombre y apellido</th>
+                                            <th>Email</th>
+                                            <th>Teléfono</th>
+                                            <th>Género</th>
+                                            <th>Servicios</th>
+                                            <th>Plan</th>
+                                            <th>Observaciones</th>
+                                            <th>Apto físico</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr v-for="cliente in clientes" class="row_clientes">
+                                            <td>{{cliente.id}}</td>
+                                            <td>{{cliente.nombre}}</td>
+                                            <td>{{cliente.mail}}</td>
+                                            <td>{{cliente.tel}}</td>
+                                            <td>{{cliente.genero}}</td>
+                                            <td>{{cliente.servicios}}</td>
+                                            <td>{{cliente.plan}}</td>
+                                            <td>{{cliente.consulta}}</td>
+                                            <td>{{cliente.aptofisico}}</td>
+                                            <td class="accion">
+                                            <td>
+                                                <a class="boton"
+                                                    :href="'templates/editar_cliente.html?id='+ cliente.id+'&nombre=' +producto.nombre+ '&precio='
+                                +cliente.mail+'&tel='+cliente.tel +  '&genero='+cliente.genero + '&servicios='+cliente.servicios
+                                + '&plan='+cliente.plan + '&consulta='+cliente.consulta + '&aptofisico='+cliente.aptofisico">Editar</a>
+                                            </td>
+                                            <td>
+                                                <button type="button"
+                                                    v-on:click="eliminar(cliente.id)">Eliminar</button>
+                                            </td>
+                                    </tbody>
+                                    </tr>
+                                </table>
+                            </section>
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../../static/js/login_clientes.js"></script>
+    <script src="js/tabla_clientes.js"></script>
 </body>
+
 </html>

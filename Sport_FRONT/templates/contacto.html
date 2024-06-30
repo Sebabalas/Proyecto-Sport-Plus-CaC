@@ -72,7 +72,7 @@
                 <div>
                 <label class="formnegrita" for="tel">Teléfono (sin guiones ni +54 ni 0 al comienzo) </label>
                 </div>
-                <input type="text" name="tel" id="tel" >
+                <input type="number" name="tel" id="tel" >
             </div>
 
             <div class="campo-form-1"> <!-- RADIO BUTTON -->
@@ -137,9 +137,13 @@
 
             <div class="campo-form-1">
                 <div>
-                    <label class="formnegrita" for="aptofisico" >Apto físico</label>
+                    <label class="formnegrita" for="aptofisico" >¿Posee apto físico?</label>
                 </div>
-                <input type="file" name="aptofisico" id="aptofisico" required>
+                <input list="tieneAptoFisico" id="aptofisico" name="aptofisico" required>
+                <datalist id="tieneAptoFisico">
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </datalist>
             </div>
 
 

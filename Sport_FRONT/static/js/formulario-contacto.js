@@ -10,30 +10,30 @@ const expresiones = {
 
 document.getElementById('form-contacto').addEventListener('submit', function(event) {
     event.preventDefault(); 
-    let planSeleccionado = document.getElementById("plan").value.toLowerCase();
-    let checkboxesSeleccionados = document.querySelectorAll('input[name="servicios"]:checked');
-    let limiteCheckbox;
+    let plan_seleccionado = document.getElementById("plan").value.toLowerCase();
+    let servicios_seleccionados = document.querySelectorAll('input[name="servicios"]:checked');
+    let limite_servicios;
 
     // Determinar el límite de selección según el plan elegido
-    switch (planSeleccionado) {
+    switch (plan_seleccionado) {
         case 'bronce':
-            limiteCheckbox = 2;
+            limite_servicios = 2;
             break;
         case 'plata':
-            limiteCheckbox = 4;
+            limite_servicios = 4;
             break;
         case 'oro':
         case 'diamante':
-            limiteCheckbox = checkboxesSeleccionados.length; // Sin límite para oro y diamante
+            limite_servicios = checkboxesSeleccionados.length; // Sin límite para oro y diamante
             break;
         default:
-            limiteCheckbox = 0; // Por defecto, no hay límite
+            limite_servicios = 0; // Por defecto, no hay límite
             break;
     }
 
-    let nombre = document.getElementById("nombre").value.trim(); 
-    let mail = document.getElementById("mail").value.trim();
-    let telefono = document.getElementById("tel").value.trim()
+    let nombre_ingresado = document.getElementById("nombre").value.trim(); 
+    let mail_ingresado = document.getElementById("mail").value.trim();
+    let telefono_ingresado = document.getElementById("tel").value.trim()
     let resultadoDiv = document.getElementById("resultado"); 
     
     if (nombre === ""|| mail === "" || telefono === "") { 
@@ -52,11 +52,64 @@ document.getElementById('form-contacto').addEventListener('submit', function(eve
         return;
     }
     // Validar la cantidad de checkboxes seleccionados
-    if (checkboxesSeleccionados.length > limiteCheckbox) {
-        resultadoDiv.textContent = 'Para el plan '+planSeleccionado.charAt(0).toUpperCase() + planSeleccionado.slice(1)+' , solo puede seleccionar '+ limiteCheckbox +' opciones.';
+    if (servicios_seleccionados.length > limite_servicios) {
+        resultadoDiv.textContent = 'Para el plan '+plan_seleccionado.charAt(0).toUpperCase() + plan_seleccionado.slice(1)+' , solo puede seleccionar '+ limite_servicios +' opciones.';
         resultadoDiv.style.color = 'yellow';
         return;
     }
-    alert('Muchas gracias por inscribirse a Sport+! Lo/a esperamos!');
+    let genero_ingresado = obtenerGeneroSeleccionado();
+    let observaciones_consulta = document.getElementById("consulta-textarea").value;
+    let tieneAptoFisico = document.getElementById("aptofisico").value;
+    let datos = {
+        nombre: nombre_ingresado,
+        mail: mail_ingresado,
+        tel: telefono_ingresado,
+        genero: genero_ingresado,
+        servicios: servicios_seleccionados,
+        plan: plan_seleccionado,
+        consulta: observaciones_consulta,
+        aptofisico: tieneAptoFisico
+    }
+    console.log(datos);
+    
+    alert('¡Muchas gracias por inscribirte a Sport+! ¡Te esperamos!');
+    enviarDatosAlBackEnd(datos);
     window.location.reload(); 
+    
 });
+
+function enviarDatosAlBackEnd(datos){
+    let url = "http://localhost:5000/clientes"
+    var options = {
+        body: JSON.stringify(datos),
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+    }
+    fetch(url, options)
+        .then(function () {
+            console.log("creado")
+            alert("Grabado")
+            // Devuelve el href (URL) de la página actual
+            // window.location.href = "../tabla_productos.html";  
+            
+        })
+        .catch(err => {
+            //this.errored = true
+            alert("Error al grabar" )
+            console.error(err);
+        })
+}
+
+function obtenerGeneroSeleccionado() {
+    // Obtener todos los elementos de radio con name="genero"
+    var radios = document.getElementsByName('genero');
+  
+    // Recorrer los radios para encontrar el que está seleccionado
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        return radios[i].value; // Devolver el valor del radio seleccionado
+      }
+    }
+  
+    return null; // Si ningún radio está seleccionado, devolver null o manejar el caso según sea necesario
+  }
