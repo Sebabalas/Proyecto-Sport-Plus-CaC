@@ -111,8 +111,6 @@ h3 {
 
 #table_clientes th:nth-child(1),
 #table_clientes td:nth-child(1),
-#table_clientes th:nth-child(3),
-#table_clientes td:nth-child(3),
 #table_clientes th:nth-child(5),
 #table_clientes td:nth-child(5),
 #table_clientes th:nth-child(7),
@@ -120,13 +118,16 @@ h3 {
     width: 5%; 
 }
 
-#table_clientes th:nth-child(8),
-#table_clientes td:nth-child(8) {
-    width: 20%; 
+#table_clientes th:nth-child(4) {
+    width: 7%; 
 }
 
-#table_clientes th:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)):not(:nth-child(8)),
-#table_clientes td:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)):not(:nth-child(8)) {
+#table_clientes th:nth-child(3) {
+    width: 15%; 
+}
+
+#table_clientes th:nth-child(8),
+#table_clientes td:nth-child(8) {
     width: 10%; 
 }
 
@@ -161,6 +162,7 @@ h3 {
 
 .row_clientes td {
     border: .25px solid green;
+    font-size: .8em;
 }
 
 
