@@ -24,7 +24,7 @@ document.getElementById('form-contacto').addEventListener('submit', function(eve
             break;
         case 'oro':
         case 'diamante':
-            limite_servicios = checkboxesSeleccionados.length; // Sin límite para oro y diamante
+            limite_servicios = servicios_seleccionados.length; // Sin límite para oro y diamante
             break;
         default:
             limite_servicios = 0; // Por defecto, no hay límite
@@ -36,17 +36,17 @@ document.getElementById('form-contacto').addEventListener('submit', function(eve
     let telefono_ingresado = document.getElementById("tel").value.trim()
     let resultadoDiv = document.getElementById("resultado"); 
     
-    if (nombre === ""|| mail === "" || telefono === "") { 
+    if (nombre_ingresado === ""|| mail_ingresado === "" || telefono_ingresado === "") { 
         resultadoDiv.textContent = 'Los campos no pueden estar vacios, por favor rellénelos.';
         resultadoDiv.style.color = 'yellow';
         return; 
     } 
-    if(!expresiones.nombre.test(nombre)){
+    if(!expresiones.nombre.test(nombre_ingresado)){
         resultadoDiv.textContent = 'Por favor, ingrese un nombre válido.';
         resultadoDiv.style.color = 'yellow';
         return; 
     }
-    if(!expresiones.telefono.test(telefono)){
+    if(!expresiones.telefono.test(telefono_ingresado)){
         resultadoDiv.textContent = 'Por favor, ingrese un número válido. Recuerde no incluir +54 ni 0 al comienzo';
         resultadoDiv.style.color = 'yellow';
         return;
