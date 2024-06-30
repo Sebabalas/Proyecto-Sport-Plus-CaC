@@ -17,22 +17,24 @@ ma = Marshmallow(app)  # Crea el objeto ma de la clase Marshmallow
 # Defino la tabla
 class Cliente(db.Model):  # La clase Cliente hereda de db.Model
     id = db.Column(db.Integer, primary_key=True)  # Define los campos de la tabla
-    nombre = db.Column(db.String(30), nullable=False)
-    apellido = db.Column(db.String(30), nullable=False)
-    edad = db.Column(db.Integer, nullable=False)
-    fecha_alta = db.Column(db.Date, nullable=False)
+    nombre = db.Column(db.String(50), nullable=False)
+    mail = db.Column(db.String(100), nullable=False)
+    tel = db.Column(db.String(15), nullable=False)
+    genero = db.Column(db.String, nullable=False)
+    servicios = db.Column(db.String(400))
     plan = db.Column(db.Enum('Plan bronce', 'Plan plata', 'Plan oro', 'Plan diamante'), nullable=False)
-    apto_fisico = db.Column(db.Enum('Sí', 'No'), nullable=False)
-    foto = db.Column(db.String(400))
+    consulta = db.Column(db.String(400))
+    aptofisico = db.Column(db.String(400))
 
-    def __init__(self, nombre, apellido, edad, fecha_alta, plan, apto_fisico, foto):  # Crea el constructor de la clase
+    def __init__(self, nombre, mail, tel, genero, servicios, plan, consulta, aptofisico):  # Crea el constructor de la clase
         self.nombre = nombre
-        self.apellido = apellido
-        self.edad = edad
-        self.fecha_alta = fecha_alta
+        self.mail = mail
+        self.tel = tel
+        self.genero = genero
+        self.servicios = servicios
         self.plan = plan
-        self.apto_fisico = apto_fisico
-        self.foto = foto
+        self.consulta = consulta
+        self.aptofisico = aptofisico
 
 # Si hay que crear más tablas, se hace aquí
 with app.app_context():
@@ -40,7 +42,7 @@ with app.app_context():
 
 class ClienteSchema(ma.Schema):
     class Meta:
-        fields = ('id', 'nombre', 'apellido', 'edad', 'fecha_alta', 'plan', 'apto_fisico', 'foto')
+        fields = ('id', 'nombre', 'mail', 'tel', 'genero', 'servicios', 'plan', 'consulta', 'aptofisico')
 
 cliente_schema = ClienteSchema()  # El objeto cliente_schema es para traer un cliente
 clientes_schema = ClienteSchema(many=True)  # El objeto clientes_schema es para traer múltiples registros de cliente
@@ -67,14 +69,16 @@ def delete_cliente(id):
 @app.route('/clientes', methods=['POST'])  # Crea ruta o endpoint
 def create_cliente():
     nombre = request.json['nombre']
-    apellido = request.json['apellido']
-    edad = request.json['edad']
-    fecha_alta = request.json['fecha_alta']
+    mail = request.json['mail']
+    tel = request.json['tel']
+    genero = request.json['genero']
+    servicios = request.json['servicios']
     plan = request.json['plan']
-    apto_fisico = request.json['apto_fisico']
-    foto = request.json['foto']
+    consulta = request.json['consulta']
+    aptofisico = request.json['aptofisico']
+
     
-    new_cliente = Cliente(nombre, apellido, edad, fecha_alta, plan, apto_fisico, foto)
+    new_cliente = Cliente(nombre, mail, tel, genero, servicios, plan, consulta, aptofisico)
     db.session.add(new_cliente)
     db.session.commit()
     return cliente_schema.jsonify(new_cliente)
@@ -83,18 +87,19 @@ def create_cliente():
 def update_cliente(id):
     cliente = Cliente.query.get(id)
     cliente.nombre = request.json['nombre']
-    cliente.apellido = request.json['apellido']
-    cliente.edad = request.json['edad']
-    cliente.fecha_alta = request.json['fecha_alta']
+    cliente.mail = request.json['mail']
+    cliente.tel = request.json['tel']
+    cliente.genero = request.json['genero']
+    cliente.servicios = request.json['servicios']
     cliente.plan = request.json['plan']
-    cliente.apto_fisico = request.json['apto_fisico']
-    cliente.foto = request.json['foto']
+    cliente.consulta = request.json['consulta']
+    cliente.aptofisico = request.json['aptofisico']
     db.session.commit()
     return cliente_schema.jsonify(cliente)
 
 @app.route('/')
 def hello_world():
-    return 'Hello from Flask!'
+    return 'Bienvenido al backend de Sport +'
 
 # Programa principal *******************************
 if __name__ == '__main__':
