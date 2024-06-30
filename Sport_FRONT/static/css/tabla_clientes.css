@@ -1,66 +1,98 @@
+:root {
+    --main-color1: #3C60DF;
+    --main-color2: #FF4550;
+    --main-color3: #CC89FF;
+    --main-color4: #FBB90D;
+    --main-color5: #E67555;
+    --main-color6: #CFCB88;
+    --body-fonts-1: "Oswald",  sans-serif;
+    --body-fonts-2: "Cooper-Hewitt",  sans-serif;
+  }
+
 body {
-    background: linear-gradient(100deg, #efcc74 0%, #CC950A 70%);
+    background-image: linear-gradient(43deg, #fbb90d 0%, #e67555 46%, #cc89ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
 }
 
-#nuevo {
-    text-align: center;
+/* LOGIN */
+
+#container_login {
+    margin-top: 10vh;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    padding: 0px 20px;
-    margin: 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    height: 40px;
-    transition: background-color 0.3s;
-}
-
-#nuevo:hover {
-    background-color: #45a049;
-}
-
-.accion div {
+    flex-direction: column;
+    align-items: center;   
     text-align: center;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    padding: 0px 20px;
-    margin: 5px;
-    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Cooper-Hewitt",  sans-serif;
+    font-weight: 100;
+
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #3C60DF;
     border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
+    border-radius: 3px;
+    color: white;
+    font-size: 1em;
     cursor: pointer;
-    height: 40px;
-    transition: background-color 0.3s;
+    font-family: "Oswald",  sans-serif;
+    font-weight: 100;
 }
 
-.accion div#modif {
-    background-color: yellow;
-    color: black;
+button:hover {
+    background-color: #0056b3;
 }
 
-.accion div#del {
-    background-color: red;
+
+/* TABLA DE CONSULTAS */
+
+section div img {
+    width: 40;
+    height: 70px;
+    margin-bottom: -30px;
 }
 
-#container_clientes {
+#container_consultasclientes {
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;   
 }
 
-#table_clientes {
-    width: 70vw;
+h3 {
+    font-family: "Oswald",  sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #table_clientes {
+    width: 90vw;
     border: .25px solid black;
     border-collapse: collapse;
+    table-layout: fixed;
+    font-family: "Cooper-Hewitt",  sans-serif;
+    font-weight: 100;
 }
 
 .head_clientes {
@@ -68,10 +100,61 @@ body {
     color: white;
 }
 
+.head_clientes th {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center; 
+    border: .25px solid black; 
+}
+
+#table_clientes th:nth-child(1),
+#table_clientes td:nth-child(1),
+#table_clientes th:nth-child(3),
+#table_clientes td:nth-child(3),
+#table_clientes th:nth-child(5),
+#table_clientes td:nth-child(5),
+#table_clientes th:nth-child(7),
+#table_clientes td:nth-child(7) {
+    width: 5%; 
+}
+
+#table_clientes th:nth-child(8),
+#table_clientes td:nth-child(8) {
+    width: 20%; 
+}
+
+#table_clientes th:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)):not(:nth-child(8)),
+#table_clientes td:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)):not(:nth-child(8)) {
+    width: 10%; 
+}
+
+.accion div { 
+    text-align: center;
+    display: inline-block;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50px;
+    height: 15px;
+    padding-top: 5px;
+    font-size: .7em;
+}
+
+.accion div#modif {
+    background-color: #3C60DF;
+}
+
+.accion div#del {
+    background-color: #FF4550;
+}
+
 .head_clientes th, .row_clientes td {
     border: .25px solid red;
-    text-align: left;
-    width: 11%;
+    text-align: center;
     padding: 10px; 
 }
 
@@ -79,13 +162,4 @@ body {
     border: .25px solid green;
 }
 
-tr img {
-    width: 100px;
-}
 
-.accion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
