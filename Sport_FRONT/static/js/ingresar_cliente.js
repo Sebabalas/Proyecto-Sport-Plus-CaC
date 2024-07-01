@@ -1,5 +1,4 @@
 function guardar() {
-    let id = document.getElementById("id").value
     let nombre_ingresado = document.getElementById("nombre").value.trim(); 
     let mail_ingresado = document.getElementById("mail").value.trim();
     let telefono_ingresado = document.getElementById("tel").value.trim()
@@ -46,3 +45,17 @@ function enviarDatosAlBackEnd(datos){
                 console.error(err);
             })
     }
+
+function obtenerGeneroSeleccionado() {
+        // Obtener todos los elementos de radio con name="genero"
+        var radios = document.getElementsByName('genero');
+      
+        // Recorrer los radios para encontrar el que está seleccionado
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            return radios[i].value; // Devolver el valor del radio seleccionado
+          }
+        }
+      
+        return null; // Si ningún radio está seleccionado, devolver null o manejar el caso según sea necesario
+      }
