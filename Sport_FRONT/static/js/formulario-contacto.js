@@ -78,28 +78,6 @@ document.getElementById('form-contacto').addEventListener('submit', function(eve
     
 });
 
-function enviarDatosAlBackEnd(datos){
-    let url = "http://localhost:5000/clientes"
-    var options = {
-        body: JSON.stringify(datos),
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-    }
-    fetch(url, options)
-        .then(function () {
-            console.log("creado")
-            alert("Grabado")
-            // Devuelve el href (URL) de la página actual
-            // window.location.href = "../tabla_productos.html";  
-            
-        })
-        .catch(err => {
-            //this.errored = true
-            alert("Error al grabar" )
-            console.error(err);
-        })
-}
-
 function obtenerGeneroSeleccionado() {
     // Obtener todos los elementos de radio con name="genero"
     var radios = document.getElementsByName('genero');
@@ -113,3 +91,27 @@ function obtenerGeneroSeleccionado() {
   
     return null; // Si ningún radio está seleccionado, devolver null o manejar el caso según sea necesario
   }
+
+  function enviarDatosAlBackEnd(datos){
+    let url = "http://127.0.0.1:5000/clientes"
+    var options = {
+        body: JSON.stringify(datos),
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+    }
+    fetch(url, options)
+        .then(function () {
+            console.log("creado")
+            alert("Grabado")
+            // Devuelve el href (URL) de la página actual
+            // window.location.href = "../tabla_productos.html";  
+            
+        })
+        
+        .catch(err => {
+            //this.errored = true
+            alert("Error al grabar" )
+            console.error(err);
+        })
+}
+

@@ -84,8 +84,8 @@ h3 {
 
 
   .nuevo { 
-    background-color: #cc8aff;
-    color: white;
+    background-color: #8aff92;
+    color: black;
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -98,6 +98,7 @@ h3 {
     align-items: center;
     cursor: pointer;
     font-weight: 100;
+    margin-bottom: 20px;
 }
 
   #table_clientes {
