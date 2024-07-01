@@ -20,13 +20,13 @@ class Cliente(db.Model):  # La clase Cliente hereda de db.Model
     nombre = db.Column(db.String(50), nullable=False)
     mail = db.Column(db.String(100), nullable=False)
     tel = db.Column(db.String(15), nullable=False)
-    genero = db.Column(db.String(10), nullable=False)
+    genero = db.Column(db.String(30), nullable=False)
     servicios = db.Column(db.String(400))
-    plan = db.Column(db.Enum('Plan bronce', 'Plan plata', 'Plan oro', 'Plan diamante'), nullable=False)
+    plan = db.Column(db.String(50), nullable=False)
     consulta = db.Column(db.String(400))
     aptofisico = db.Column(db.String(10), nullable=False)
-
-    def __init__(self, nombre, mail, tel, genero, servicios, plan, consulta, aptofisico):  # Crea el constructor de la clase
+    
+    def __init__(self, nombre, mail, tel, genero, servicios, plan, consulta, aptofisico):
         self.nombre = nombre
         self.mail = mail
         self.tel = tel
@@ -73,12 +73,23 @@ def create_cliente():
     tel = request.json['tel']
     genero = request.json['genero']
     servicios = request.json['servicios']
+    # Convertir la lista de servicios en una cadena separada por comas
+    servicios_str = ', '.join(servicios)
     plan = request.json['plan']
     consulta = request.json['consulta']
     aptofisico = request.json['aptofisico']
 
-    
-    new_cliente = Cliente(nombre, mail, tel, genero, servicios, plan, consulta, aptofisico)
+    # Crear una nueva instancia de Cliente con servicios_str
+    new_cliente = Cliente(
+        nombre=nombre,
+        mail=mail,
+        tel=tel,
+        genero=genero,
+        servicios=servicios_str,  # Usar la cadena convertida aquí
+        plan=plan,
+        consulta=consulta,
+        aptofisico=aptofisico
+    )
     db.session.add(new_cliente)
     db.session.commit()
     return cliente_schema.jsonify(new_cliente)

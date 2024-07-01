@@ -27,6 +27,8 @@
             </div>
 
             <h3>ACCESO ADMINISTRADOR</h3>
+
+
             <form action="/login" method="post">
 
                 <label for="username">Usuario</label>
@@ -52,7 +54,7 @@
                 <div id="app">
 
                     <!-- Botón Nuevo -->
-                    <a class="nuevo" href="templates/ingresar_producto.html">Nuevo</a>
+                    <a class="nuevo" href="nuevo_cliente.html">Nuevo</a>
 
                     <section v-if="error">Lo sentimos se produjo un error</section>
                     <section v-else>
@@ -74,11 +76,10 @@
                                             <th>Plan</th>
                                             <th>Observaciones</th>
                                             <th>Apto físico</th>
-                                            <th>Acciones</th>
+                                            <th colspan="2">Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-
                                         <tr v-for="cliente in clientes" class="row_clientes">
                                             <td>{{cliente.id}}</td>
                                             <td>{{cliente.nombre}}</td>
@@ -89,19 +90,21 @@
                                             <td>{{cliente.plan}}</td>
                                             <td>{{cliente.consulta}}</td>
                                             <td>{{cliente.aptofisico}}</td>
+                                
                                             <td class="accion">
-                                            <td>
-                                                <a class="boton"
-                                                    :href="'templates/editar_cliente.html?id='+ cliente.id+'&nombre=' +producto.nombre+ '&precio='
-                                +cliente.mail+'&tel='+cliente.tel +  '&genero='+cliente.genero + '&servicios='+cliente.servicios
-                                + '&plan='+cliente.plan + '&consulta='+cliente.consulta + '&aptofisico='+cliente.aptofisico">Editar</a>
+    <a class="boton_editar"
+       :href="'templ/editar_cliente.html?id=' + cliente.id + '&nombre=' + cliente.nombre + '&mail=' + cliente.mail + '&tel=' + cliente.tel + '&genero=' + cliente.genero + '&servicios=' + cliente.servicios + '&plan=' + cliente.plan + '&consulta=' + cliente.consulta + '&aptofisico=' + cliente.aptofisico">
+       Editar
+    </a>
+</td>
+                                
+                                            <td class="accion">
+                                                <button class="boton_eliminar" type="button" v-on:click="eliminar(cliente.id)">
+                                                    Eliminar
+                                                </button>
                                             </td>
-                                            <td>
-                                                <button type="button"
-                                                    v-on:click="eliminar(cliente.id)">Eliminar</button>
-                                            </td>
+                                        </tr>
                                     </tbody>
-                                    </tr>
                                 </table>
                             </section>
                         </div>
