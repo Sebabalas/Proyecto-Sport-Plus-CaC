@@ -31,7 +31,7 @@ const { createApp } = Vue
         // el id se necesita para buscar en la DB y eliminarlo
         eliminar(id) {
             
-            const url = 'http://localhost:5000/clientes/'+id;
+            const url = 'http://localhost:5000/clientes/' + id
             var options = {
                 method: 'DELETE',
                 
