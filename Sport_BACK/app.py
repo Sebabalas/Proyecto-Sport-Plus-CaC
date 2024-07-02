@@ -5,7 +5,9 @@ from flask_marshmallow import Marshmallow
 
 app = Flask(__name__)  # Crear el objeto app de la clase Flask
 
-CORS(app)  # Modulo CORS es para que me permita acceder desde el frontend al backend
+# CORS(app)  # Modulo CORS es para que me permita acceder desde el frontend al backend
+CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST", "PUT", "DELETE"], "allow_headers": "*"}})
+
 
 # Configuro la base de datos, con el nombre el usuario y la clave
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost/sportmas'
