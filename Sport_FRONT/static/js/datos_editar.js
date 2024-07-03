@@ -24,12 +24,25 @@ document.getElementById("id").value = resultado["id"];
 document.getElementById("nombre").value = resultado["nombre"];
 document.getElementById("mail").value = resultado["mail"];
 document.getElementById("telefono").value = resultado["tel"];
-document.getElementsByName(resultado["genero"]).checked = true;
 
-let serviciosSeleccionados = resultado["servicios"].split(",");
-serviciosSeleccionados.forEach(servicio => {
-    document.getElementsByName(servicio).checked = true;
-});
+let generoSeleccionado = resultado["genero"];
+let radiosGenero = document.getElementsByName("genero");
+for (let radio of radiosGenero) {
+    if (radio.value === generoSeleccionado) {
+        radio.checked = true;
+        break;
+    }
+}
+
+if (resultado["servicios"]) {
+    let serviciosSeleccionados = resultado["servicios"].split(",");
+    serviciosSeleccionados.forEach(servicio => {
+        let checkbox = document.getElementById(servicio.trim());
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
+}
 
 document.getElementById("plan").value = resultado["plan"];
 document.getElementById("consulta-textarea").value = resultado["consulta"];
