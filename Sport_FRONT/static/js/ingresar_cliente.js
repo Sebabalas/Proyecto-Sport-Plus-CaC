@@ -118,6 +118,9 @@ function enviarDatosAlBackEnd(datos) {
             if (!response.ok) {
                 throw new Error('La red no responde');
             }
+
+            window.location.href = "../../templates/admin/tabla_clientes.html";
+
             return response;
         });
 }
