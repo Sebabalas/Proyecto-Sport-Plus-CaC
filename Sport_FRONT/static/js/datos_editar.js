@@ -13,14 +13,6 @@ let resultado = {};
 // Iterar sobre los parámetros y guardar los nombres y valores en el objeto resultado
 for (const [nombre, valor] of datos) {
     resultado[nombre] = valor;
-    resultado[mail] = valor;
-    resultado[tel] = valor;
-    resultado[genero] = valor;
-    resultado[servicios] = valor;
-    resultado[plan] = valor;
-    resultado[consulta] = valor;
-    resultado[aptofisico] = valor;
-    
 }
 
 // Imprimir el resultado
@@ -28,12 +20,17 @@ console.log(resultado); // Esto mostrará un objeto con las variables y sus valo
 
 
 // Procedimiento para mostrar los datos a editar en el formulario de edición
-document.getElementById("id").value = resultado["id"]
-document.getElementById("nombre").value = resultado["nombre"]
-document.getElementById("mail").value = resultado["mail"]
-document.getElementById("tel").value = resultado["tel"]
-document.getElementById("genero").value = resultado["genero"]
-document.getElementById("servicios").value = resultado["servicios"]
-document.getElementById("plan").value = resultado["plan"]
-document.getElementById("consulta").value = resultado["consulta"]
-document.getElementById("aptofisico").value = resultado["aptofisico"]
+document.getElementById("id").value = resultado["id"];
+document.getElementById("nombre").value = resultado["nombre"];
+document.getElementById("mail").value = resultado["mail"];
+document.getElementById("telefono").value = resultado["tel"];
+document.getElementById(resultado["genero"]).checked = true;
+
+let serviciosSeleccionados = resultado["servicios"].split(",");
+serviciosSeleccionados.forEach(servicio => {
+    document.getElementById(servicio).checked = true;
+});
+
+document.getElementById("plan").value = resultado["plan"];
+document.getElementById("consulta-textarea").value = resultado["consulta"];
+document.getElementById("aptofisico").value = resultado["aptofisico"];

@@ -25,7 +25,7 @@ function modificar() {
 }
 
 function enviarDatosAlBackEnd(datos){
-        let url = "http://localhost:5000/clientes/"+id
+        let url = "http://127.0.0.1:5000/clientes/"+id
         var options = {
             body: JSON.stringify(datos),
             method: 'PUT',
@@ -41,7 +41,7 @@ function enviarDatosAlBackEnd(datos){
                 alert("Registro modificado")
     
                 //Puedes utilizar window.location.href para obtener la URL actual, redirigir a otras páginas
-               window.location.href = "../tabla_productos.html";
+               window.location.href = "../tabla_clientes.html";
               
             })
             .catch(err => {
