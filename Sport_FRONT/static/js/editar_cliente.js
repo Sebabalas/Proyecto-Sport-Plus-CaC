@@ -26,7 +26,7 @@ function modificar() {
 }
 
 function enviarDatosAlBackEnd(datos, id){
-    let url = "http://127.0.0.1:5000/clientes/" + id;
+    let url = "http://sportmas.pythonanywhere.com/clientes/" + id;
     var options = {
         body: JSON.stringify(datos),
         method: 'PUT',

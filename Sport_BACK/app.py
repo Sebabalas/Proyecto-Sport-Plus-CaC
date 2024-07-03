@@ -10,7 +10,7 @@ CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST", "PUT", "
 
 
 # Configuro la base de datos, con el nombre el usuario y la clave
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost/sportmas'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sportmas:proyectosportmas@sportmas.mysql.pythonanywhere-services.com/sportmas$default'
 # URI de la BBDD driver de la BD user:clave@URLBBDD/nombreBBDD
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # None
 db = SQLAlchemy(app)  # Crea el objeto db de la clase SQLAlchemy

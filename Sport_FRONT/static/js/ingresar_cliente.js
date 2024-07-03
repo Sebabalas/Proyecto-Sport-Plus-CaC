@@ -106,7 +106,7 @@ function obtenerGeneroSeleccionado() {
 }
 
 function enviarDatosAlBackEnd(datos) {
-    let url = "http://127.0.0.1:5000/clientes";
+    let url = "http://sportmas.pythonanywhere.com/clientes";
     var options = {
         body: JSON.stringify(datos),
         method: 'POST',
