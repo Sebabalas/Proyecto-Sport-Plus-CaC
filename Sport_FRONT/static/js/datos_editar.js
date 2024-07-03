@@ -24,7 +24,7 @@ for (const [nombre, valor] of datos) {
 }
 
 // Imprimir el resultado
-// console.log(resultado); // Esto mostrará un objeto con las variables y sus valores
+console.log(resultado); // Esto mostrará un objeto con las variables y sus valores
 
 
 // Procedimiento para mostrar los datos a editar en el formulario de edición
