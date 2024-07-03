@@ -24,11 +24,11 @@ document.getElementById("id").value = resultado["id"];
 document.getElementById("nombre").value = resultado["nombre"];
 document.getElementById("mail").value = resultado["mail"];
 document.getElementById("telefono").value = resultado["tel"];
-document.getElementById(resultado["genero"]).checked = true;
+document.getElementsByName(resultado["genero"]).checked = true;
 
 let serviciosSeleccionados = resultado["servicios"].split(",");
 serviciosSeleccionados.forEach(servicio => {
-    document.getElementById(servicio).checked = true;
+    document.getElementsByName(servicio).checked = true;
 });
 
 document.getElementById("plan").value = resultado["plan"];
