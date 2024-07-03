@@ -187,6 +187,7 @@ h3 {
 .row_clientes td {
     border: .25px solid green;
     font-size: .8em;
+    word-wrap: break-word; 
 }
 
 
